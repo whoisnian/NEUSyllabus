@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using SyllabusV0._1.Services;
 
 // https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
 
@@ -22,9 +23,48 @@ namespace SyllabusV0._1
     /// </summary>
     public sealed partial class SettingPage : Page
     {
+        private Courses ViewModel { get; set; }
+
         public SettingPage()
         {
             this.InitializeComponent();
+            this.ViewModel = new Courses();
+        }
+
+        private void EnterAccount_OnClick(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void NotEnterAccount_OnClick(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void EnterCourse_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (CourseNameBox.Text != "")
+            {
+                if (!ViewModel.Contains(CourseNameBox.Text, TeacherNameBox.Text))//没有用？？
+                {
+                    this.ViewModel.Add(CourseNameBox.Text, TeacherNameBox.Text);
+                    //todo:关闭窗口
+                }
+                else
+                {
+                    //todo:通过某种手段弹出错误提示
+                }
+                
+            }
+            else
+            {
+                //todo:通过某种手段弹出错误提示
+            }
+        }
+
+        private void NotEnterCourse_OnClick(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

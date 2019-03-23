@@ -5,10 +5,142 @@
     xmlns:local="using:SyllabusV0._1"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:services="using:SyllabusV0._1.Services"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock FontSize="64">SettingPage</TextBlock>
+    <Grid FlyoutBase.AttachedFlyout="{StaticResource TextControlCommandBarContextFlyout}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Content="同步教务处课程"
+                Name="AutoAddCourse"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Grid.Row="1"
+                Margin="50,25,0,0">
+            <Button.Flyout>
+                <Flyout>
+                    <StackPanel Orientation="Vertical">
+
+                        <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                   Text="请输入学号和教务处密码" 
+                                   Margin="0,0,0,12" />
+                        <RelativePanel>
+                            <TextBlock Name="BeforeName"
+                                       Margin="0,5,10,0"
+                                       VerticalAlignment="Center">学号</TextBlock>
+                            <TextBox Name="NameBox"
+                                     VerticalAlignment="Center"
+                                     RelativePanel.RightOf="BeforeName"/>
+
+                        </RelativePanel>
+                        <RelativePanel>
+                            <TextBlock Name="BeforePsw"
+                                       Margin="0,5,10,0"
+                                       VerticalAlignment="Center">密码</TextBlock>
+                            <PasswordBox Name="PswBox"
+                                         RelativePanel.RightOf="BeforePsw"/>
+                        </RelativePanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Button Content="确认"
+                                    Name="EnterAccount"
+                                    HorizontalAlignment="Left"
+                                    Grid.Column="0"
+                                    Click="EnterAccount_OnClick" />
+                            <Button Content="取消"
+                                    Name="NotEnterAccount"
+                                    HorizontalAlignment="Right"
+                                    Grid.Column="2"
+                                    Click="NotEnterAccount_OnClick"></Button>
+                        </Grid>
+                        
+                    </StackPanel>
+                </Flyout>
+            </Button.Flyout>
+
+        </Button>
+        <Button Content="单独添加课程"
+                Name="ManualAddCourse"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Grid.Row="2"
+                Margin="50,25,0,0"
+                >
+            <Button.Flyout>
+                <Flyout>
+                    <StackPanel Orientation="Vertical">
+
+                        <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                   Text="请输入课程信息" 
+                                   Margin="0,0,0,12" />
+                        <RelativePanel>
+                            <TextBlock Name="BeforeCourseName"
+                                       Margin="0,5,10,0"
+                                       VerticalAlignment="Center">课程名称</TextBlock>
+                            <TextBox Name="CourseNameBox"
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="(必填)"
+                                     RelativePanel.RightOf="BeforeCourseName"/>
+                        </RelativePanel>
+                        <RelativePanel>
+                            <TextBlock Name="BeforeTeacherName"
+                                       Margin="0,5,10,0"
+                                       VerticalAlignment="Center">老师姓名</TextBlock>
+                            <TextBox Name="TeacherNameBox"
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="(选填)"
+                                     RelativePanel.RightOf="BeforeTeacherName"/>
+                        </RelativePanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Button Content="确认"
+                                    Name="EnterCourse"
+                                    HorizontalAlignment="Left"
+                                    Grid.Column="0"
+                                    Click="EnterCourse_OnClick" />
+                            <Button Content="取消"
+                                    Name="NotEnterCourse"
+                                    HorizontalAlignment="Right"
+                                    Grid.Column="2"
+                                    Click="NotEnterCourse_OnClick"></Button>
+                        </Grid>
+
+                    </StackPanel>
+                </Flyout>
+            </Button.Flyout>
+        </Button>
+
+        <ListView ItemsSource="{x:Bind ViewModel.CourseCollection}"
+                  Name="AllCoursesList"
+                  Grid.Row="3"
+                  Margin="50,25,0,0"
+                  HorizontalAlignment="Left">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="services:Course">
+                    <StackPanel Orientation="Horizontal" Margin="6">
+                        <SymbolIcon Symbol="Audio" Margin="0,0,12,0"/>
+                        <StackPanel>
+                            <TextBlock Text="{x:Bind Name}" FontWeight="Bold"/>
+                            <TextBlock Text="{x:Bind Teacher}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>
