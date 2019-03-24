@@ -13,8 +13,8 @@ namespace SyllabusV0._1.Services
         public ObservableCollection<Course> CourseCollection = new ObservableCollection<Course>();
         public Courses()
         {
-            this.CourseCollection.Add(new Course("高等数学", "渡边梨加"));
-            this.CourseCollection.Add(new Course("线性代数", "井上梨名"));
+            this.CourseCollection.Add(new Course("高等数学", "王老师"));
+            this.CourseCollection.Add(new Course("线性代数", "渡边梨加"));
             this.CourseCollection.Add(new Course("数理统计", "斋藤飞鸟"));
         }
 
@@ -27,5 +27,7 @@ namespace SyllabusV0._1.Services
         {
             return this.CourseCollection.Contains(new Course(InputName,InputTeacher));
         }
+
+        
     }
 }

@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using SyllabusV0._1.Services;
+using GalaSoft.MvvmLight.Ioc;
 
 namespace SyllabusV0._1
 {
@@ -71,6 +73,7 @@ namespace SyllabusV0._1
                 // 确保当前窗口处于活动状态
                 Window.Current.Activate();
             }
+            SimpleIoc.Default.Register<Courses>();
         }
 
         /// <summary>

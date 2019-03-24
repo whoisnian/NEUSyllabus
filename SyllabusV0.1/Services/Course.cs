@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,12 +11,19 @@ namespace SyllabusV0._1.Services
     {
         public String Name;
         public String Teacher;
-        public List<LocTime>LocTimes;
+        public ObservableCollection<LocTime> LocTimes=new ObservableCollection<LocTime>();
 
         public Course(String InputName, String InputTeacher)
         {
-            Name = InputName;
-            Teacher = InputTeacher;
+            this.Name = InputName;
+            this.Teacher = InputTeacher;
+            this.LocTimes.Add(new LocTime("一号楼A104","111111110000000000",1,3,4));
+            this.LocTimes.Add(new LocTime("一号楼A105", "111111110000000000",3,5, 6));
+        }
+
+        public void AddLocTime(String InputLocation, String InputWeek, int InputWeekDay, int InputBeginTime, int InputEndTime)
+        {
+            this.LocTimes.Add(new LocTime(InputLocation,InputWeek,InputWeekDay,InputBeginTime,InputEndTime));
         }
     }
     

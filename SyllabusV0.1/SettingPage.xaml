@@ -133,10 +133,31 @@
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="services:Course">
                     <StackPanel Orientation="Horizontal" Margin="6">
-                        <SymbolIcon Symbol="Audio" Margin="0,0,12,0"/>
-                        <StackPanel>
-                            <TextBlock Text="{x:Bind Name}" FontWeight="Bold"/>
-                            <TextBlock Text="{x:Bind Teacher}"/>
+                        <Button Name="AddTime"                               
+                                Margin="0,0,12,0">
+                            <SymbolIcon Symbol="Add"/>
+                            <Button.Flyout>
+                                <Flyout>
+                                    <StackPanel Orientation="Vertical">
+
+                                        <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                   Text="添加新上课时间" 
+                                   Margin="0,0,0,12" />
+                                    </StackPanel>
+                                </Flyout>
+                            </Button.Flyout>
+                        </Button>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical" Margin="6">
+                                <TextBlock Text="{x:Bind Name}" FontWeight="Bold"/>
+                                <TextBlock Text="{x:Bind Teacher}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="{x:Bind LocTimes[0].Location}"/>
+                                <TextBlock Text="{x:Bind LocTimes[0].WeekForShow}"/>
+                                <TextBlock Text="{x:Bind LocTimes[0].TimeForShow}"/>
+                            </StackPanel>
+                            
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>

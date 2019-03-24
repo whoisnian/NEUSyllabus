@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using GalaSoft.MvvmLight.Ioc;
 using SyllabusV0._1.Services;
 
 // https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
@@ -28,7 +29,7 @@ namespace SyllabusV0._1
         public SettingPage()
         {
             this.InitializeComponent();
-            this.ViewModel = new Courses();
+            this.ViewModel = SimpleIoc.Default.GetInstance<Courses>();
         }
 
         private void EnterAccount_OnClick(object sender, RoutedEventArgs e)
