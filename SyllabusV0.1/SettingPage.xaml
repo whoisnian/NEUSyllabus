@@ -70,7 +70,7 @@
             </Button.Flyout>
 
         </Button>
-        <Button Content="单独添加课程"
+        <Button Content="添加课程"
                 Name="ManualAddCourse"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Left"
@@ -132,34 +132,116 @@
                   HorizontalAlignment="Left">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="services:Course">
-                    <StackPanel Orientation="Horizontal" Margin="6">
-                        <Button Name="AddTime"                               
-                                Margin="0,0,12,0">
-                            <SymbolIcon Symbol="Add"/>
-                            <Button.Flyout>
-                                <Flyout>
-                                    <StackPanel Orientation="Vertical">
+                    <Button>
+                        <Button.Flyout>
+                            <Flyout>
+                                <Button>
+                                    <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                           Text="删除本课程" 
+                                           Margin="0,0,0,12" />
+                                </Button>
+                                
+                            </Flyout>
+                        </Button.Flyout>
+                        <StackPanel Orientation="Horizontal" Margin="6">
+                            <Button Name="AddTime"  
+                                    Margin="0,0,12,0">
+                                <SymbolIcon Symbol="Add"/>
+                                <Button.Flyout>
+                                    <Flyout>
+                                        <StackPanel Orientation="Vertical">
+                                            <GridView SelectionMode="Multiple"                                                    
+                                                      SelectionChanged="Selector_OnSelectionChanged"
+                                                      ItemsSource="{x:Bind WeekChoices}"
+                                                      Width="250"
+                                                      Header="哪些周？">
 
-                                        <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
-                                   Text="添加新上课时间" 
-                                   Margin="0,0,0,12" />
-                                    </StackPanel>
-                                </Flyout>
-                            </Button.Flyout>
-                        </Button>
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel Orientation="Vertical" Margin="6">
-                                <TextBlock Text="{x:Bind Name}" FontWeight="Bold"/>
-                                <TextBlock Text="{x:Bind Teacher}"/>
+                                            </GridView>
+                                            <StackPanel Orientation="Horizontal">
+                                                <ComboBox Name="ChooseWeekday"
+                                                          SelectionChanged="ChooseWeekday_OnSelectionChanged"
+                                                          Header="周几？"
+                                                          Width="100">
+                                                    <x:String>周一</x:String>
+                                                    <x:String>周二</x:String>
+                                                    <x:String>周三</x:String>
+                                                    <x:String>周四</x:String>
+                                                    <x:String>周五</x:String>
+                                                    <x:String>周六</x:String>
+                                                    <x:String>周日</x:String>
+                                                </ComboBox>
+                                                <ComboBox Name="ChooseTime"
+                                                          SelectionChanged="ChooseTime_OnSelectionChanged"
+                                                          Header="哪节？"
+                                                          Width="100">
+                                                    <x:String>1-2</x:String>
+                                                    <x:String>3-4</x:String>
+                                                    <x:String>5-6</x:String>
+                                                    <x:String>7-8</x:String>
+                                                    <x:String>9-10</x:String>
+                                                    <x:String>11-12</x:String>
+                                                    <x:String>1-4</x:String>
+                                                    <x:String>5-8</x:String>
+                                                    <x:String>9-12</x:String>
+                                                    <x:String>1-8</x:String>
+                                                </ComboBox>
+                                            </StackPanel>
+                                            <TextBox Name="ChooseLocation"
+                                                     Header="哪个教室？
+                                                     "/>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+                                                <Button Content="确认"
+                                                        Name="EnterTime"
+                                                        HorizontalAlignment="Left"
+                                                        Grid.Column="0"
+                                                        Click="EnterTime_OnClick" />
+                                                <Button Content="取消"
+                                                        Name="NotEnterTime"
+                                                        HorizontalAlignment="Right"
+                                                        Grid.Column="2"
+                                                        Click="NotEnterTime_OnClick"></Button>
+                                            </Grid>
+                                        </StackPanel>
+                                    </Flyout>
+                                </Button.Flyout>
+                            </Button>
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel Orientation="Vertical" Margin="6">
+                                    <TextBlock Text="{x:Bind Name}" FontWeight="Bold"/>
+                                    <TextBlock Text="{x:Bind Teacher}"/>
+                                </StackPanel>
+                                <GridView ItemsSource="{x:Bind LocTimes}"
+                                          HorizontalAlignment="Left">
+                                    <GridView.ItemTemplate>
+                                        <DataTemplate x:DataType="services:LocTime">
+                                            <Button>
+                                                <Button.Flyout>
+                                                    <Flyout>
+                                                        <Button>
+                                                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                                                       Text="删除本时间" 
+                                                                       Margin="0,0,0,12" />
+                                                        </Button>
+                                                        
+                                                    </Flyout>
+                                                </Button.Flyout>
+                                                <StackPanel Orientation="Vertical" Margin="6">
+                                                    <TextBlock Text="{x:Bind Location}"/>
+                                                    <TextBlock Text="{x:Bind WeekForShow}"/>
+                                                    <TextBlock Text="{x:Bind TimeForShow}"/>
+                                                </StackPanel>
+                                            </Button>
+                                        </DataTemplate>
+                                    </GridView.ItemTemplate>
+                                </GridView>
                             </StackPanel>
-                            <StackPanel Orientation="Vertical">
-                                <TextBlock Text="{x:Bind LocTimes[0].Location}"/>
-                                <TextBlock Text="{x:Bind LocTimes[0].WeekForShow}"/>
-                                <TextBlock Text="{x:Bind LocTimes[0].TimeForShow}"/>
-                            </StackPanel>
-                            
                         </StackPanel>
-                    </StackPanel>
+                    </Button>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
