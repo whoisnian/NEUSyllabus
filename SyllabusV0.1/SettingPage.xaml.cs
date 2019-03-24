@@ -25,11 +25,13 @@ namespace SyllabusV0._1
     public sealed partial class SettingPage : Page
     {
         private Courses ViewModel { get; set; }
+        private LocTime NowLocTime { get; set; }
 
         public SettingPage()
         {
             this.InitializeComponent();
             this.ViewModel = SimpleIoc.Default.GetInstance<Courses>();
+            this.NowLocTime = SimpleIoc.Default.GetInstance<LocTime>();
         }
 
         private void EnterAccount_OnClick(object sender, RoutedEventArgs e)
@@ -46,7 +48,7 @@ namespace SyllabusV0._1
         {
             if (CourseNameBox.Text != "")
             {
-                if (!ViewModel.Contains(CourseNameBox.Text, TeacherNameBox.Text))//没有用？？
+                if (!ViewModel.CourseCollection.Contains(new Course(CourseNameBox.Text, TeacherNameBox.Text)))//没有用？？
                 {
                     this.ViewModel.Add(CourseNameBox.Text, TeacherNameBox.Text);
                     //todo:关闭窗口
@@ -85,12 +87,12 @@ namespace SyllabusV0._1
 
         private void EnterTime_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
 
         private void NotEnterTime_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            //todo:关闭当前弹出窗口
         }
     }
 }

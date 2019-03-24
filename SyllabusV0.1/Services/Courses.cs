@@ -17,7 +17,7 @@ namespace SyllabusV0._1.Services
             this.CourseCollection.Add(new Course("线性代数", "渡边梨加"));
             this.CourseCollection.Add(new Course("数理统计", "斋藤飞鸟"));
         }
-
+        
         public void Add(String InputName, String InputTeacher)
         {
             this.CourseCollection.Add(new Course(InputName,InputTeacher));

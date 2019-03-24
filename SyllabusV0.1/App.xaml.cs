@@ -74,6 +74,7 @@ namespace SyllabusV0._1
                 Window.Current.Activate();
             }
             SimpleIoc.Default.Register<Courses>();
+            SimpleIoc.Default.Register<LocTime>(() => new LocTime());
         }
 
         /// <summary>

@@ -14,9 +14,16 @@ namespace SyllabusV0._1.Services
         public int WeekDay,BeginTime, EndTime;
         public String Week;
         public String WeekForShow,TimeForShow;
+
         /// <summary>
         /// exp:new LocTime("one building A104","10000101011","3","3',"4"
         /// </summary>
+        ///
+        public LocTime()
+        {
+
+        }
+
         public LocTime(String InputLocation, String InputWeek,int InputWeekDay,int InputBeginTime, int InputEndTime)
         {
             this.Location = InputLocation;
