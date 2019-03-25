@@ -15,7 +15,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using SyllabusV0._1.Services;
+using SyllabusV0._1.Models;
 using GalaSoft.MvvmLight.Ioc;
+using Microsoft.EntityFrameworkCore;
 
 namespace SyllabusV0._1
 {
@@ -72,6 +74,14 @@ namespace SyllabusV0._1
                 }
                 // 确保当前窗口处于活动状态
                 Window.Current.Activate();
+            }
+            using (var db = new DataContext())
+            {
+                System.Diagnostics.Debug.WriteLine("app_launched");
+                //db.Database.EnsureDeleted();//清空数据库所有表
+                db.Database.EnsureCreated(); //说明链接 https://docs.microsoft.com/en-us/ef/core/managing-schemas/ensure-created
+                db.DbCourses.Add(new DbCourse { Name = "hello", Teacher = "world" });
+                db.SaveChanges();
             }
             SimpleIoc.Default.Register<Courses>();
             SimpleIoc.Default.Register<LocTime>(() => new LocTime());

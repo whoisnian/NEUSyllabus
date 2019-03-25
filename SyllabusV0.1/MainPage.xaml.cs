@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SyllabusV0._1.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -69,6 +70,18 @@ namespace SyllabusV0._1
             if (!(_page is null) && !Type.Equals(preNavPageType, _page))
             {
                 ContentFrame.Navigate(_page, null, transitionInfo);
+            }
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            // 测试能否从本地数据库获取数据
+            using (var db = new DataContext())
+            {
+                System.Diagnostics.Debug.WriteLine("page_loaded");
+                List<DbCourse> dbCourses = db.DbCourses.ToList<DbCourse>();
+                for(int i = 0;i < dbCourses.Count;i++)
+                    System.Diagnostics.Debug.WriteLine(dbCourses[i].Name);
             }
         }
     }
