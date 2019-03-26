@@ -31,14 +31,14 @@ namespace SyllabusV0._1
 
         private readonly List<(string Tag, Type Page)> _pages = new List<(string Tag, Type Page)>
         {
-            ("NowPage", typeof(NowPage)),
+            ("WeekSyllabus", typeof(WeekSyllabus)),
             ("AllPage", typeof(AllPage)),
         };
 
         private void NavView_Loaded(object sender, RoutedEventArgs e)
         {
             NavView.SelectedItem = NavView.MenuItems[0];
-            NavView_Navigate("NowPage", new EntranceNavigationTransitionInfo());
+            NavView_Navigate("WeekSyllabus", new EntranceNavigationTransitionInfo());
         }
 
         private void NvSample_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
