@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="SyllabusV0._1.NowPage"
+    x:Class="SyllabusV0._1.WeekSyllabus"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:SyllabusV0._1"
@@ -8,7 +8,134 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock FontSize="64">NowPage</TextBlock>
-    </Grid>
+    <StackPanel Orientation="Horizontal">
+        <!--第一列-->
+        <StackPanel Width="100" >
+            <Grid BorderBrush="Black" BorderThickness="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第XX周"/>
+
+                <TextBlock Grid.Row="1"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第 一 节"/>
+
+                <TextBlock Grid.Row="2"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第 二 节"/>
+
+                <TextBlock Grid.Row="3"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第 三 节"/>
+
+                <TextBlock Grid.Row="4"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第 四 节"/>
+
+                <TextBlock Grid.Row="5"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第 五 节"/>
+
+                <TextBlock Grid.Row="6"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第 六 节"/>
+
+                <TextBlock Grid.Row="7"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第 七 节"/>
+
+                <TextBlock Grid.Row="8"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第 八 节"/>
+
+                <TextBlock Grid.Row="9"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第 九 节"/>
+
+                <TextBlock Grid.Row="10"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第 十 节"/>
+
+                <TextBlock Grid.Row="11"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第十一节"/>
+
+                <TextBlock Grid.Row="12"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="第十二节"/>
+
+
+
+            </Grid>
+        </StackPanel>
+
+        <!--第二列-->
+        <StackPanel Width="100">
+            <Grid Margin="0,0,0,0" VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Text="周日"/>
+
+                <StackPanel Grid.Row="1"
+                            Background="SpringGreen"
+                            Name="Sunday1">
+                    <TextBlock Text="hahahahahah"/>
+                    <Rectangle Fill="Red"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2"
+                            Background="Aqua"
+                            Name="Sunday2">
+
+                </StackPanel>
+
+
+
+                <TextBlock Grid.Row="4"
+                           Text="haha"/>
+
+            </Grid>
+        </StackPanel>
+
+    </StackPanel>
 </Page>

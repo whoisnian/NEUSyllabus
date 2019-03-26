@@ -20,9 +20,9 @@ namespace SyllabusV0._1
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class NowPage : Page
+    public sealed partial class WeekSyllabus : Page
     {
-        public NowPage()
+        public WeekSyllabus()
         {
             this.InitializeComponent();
         }
