@@ -15,7 +15,7 @@
                         Loaded="NavView_Loaded"
         >
             <NavigationView.MenuItems>
-                <NavigationViewItem Icon="Play" Content="NowPage" Tag="NowPage" />
+                <NavigationViewItem Icon="Play" Content="WeekSyllabus" Tag="WeekSyllabus" />
                 <NavigationViewItem Icon="Save" Content="AllPage" Tag="AllPage" />
             </NavigationView.MenuItems>
             <Frame x:Name="ContentFrame"/>
