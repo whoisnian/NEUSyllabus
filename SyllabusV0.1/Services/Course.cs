@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SyllabusV0._1.Services
 {
-    class Course
+    public class Course
     {
         public String Name;
         public String Teacher;

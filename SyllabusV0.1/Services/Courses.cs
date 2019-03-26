@@ -8,7 +8,7 @@ using Windows.ApplicationModel.Appointments.AppointmentsProvider;
 
 namespace SyllabusV0._1.Services
 {
-    class Courses
+    public class Courses
     {
         public ObservableCollection<Course> CourseCollection = new ObservableCollection<Course>();
         public Courses()

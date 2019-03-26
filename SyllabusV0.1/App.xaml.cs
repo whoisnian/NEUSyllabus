@@ -83,6 +83,7 @@ namespace SyllabusV0._1
                 db.DbCourses.Add(new DbCourse { Name = "hello", Teacher = "world" });
                 db.SaveChanges();
             }
+            SimpleIoc.Default.Register<GetCoursesService>();
             SimpleIoc.Default.Register<Courses>();
             SimpleIoc.Default.Register<LocTime>(() => new LocTime());
         }

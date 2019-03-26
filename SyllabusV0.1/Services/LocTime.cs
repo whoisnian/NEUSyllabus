@@ -8,7 +8,7 @@ using Windows.Networking.Sockets;
 
 namespace SyllabusV0._1.Services
 {
-    class LocTime
+    public class LocTime
     {
         public String Location;
         public int WeekDay,BeginTime, EndTime;
