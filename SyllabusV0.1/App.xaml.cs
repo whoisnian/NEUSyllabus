@@ -78,7 +78,7 @@ namespace SyllabusV0._1
             using (var db = new DataContext())
             {
                 System.Diagnostics.Debug.WriteLine("app_launched");
-                //db.Database.EnsureDeleted();//清空数据库所有表
+                db.Database.EnsureDeleted();//清空数据库所有表
                 db.Database.EnsureCreated(); //说明链接 https://docs.microsoft.com/en-us/ef/core/managing-schemas/ensure-created
                 db.DbCourses.Add(new DbCourse { Name = "hello", Teacher = "world" });
                 db.SaveChanges();

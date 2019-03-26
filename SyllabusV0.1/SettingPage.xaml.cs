@@ -34,9 +34,9 @@ namespace SyllabusV0._1
             this.NowLocTime = SimpleIoc.Default.GetInstance<LocTime>();
         }
 
-        private void EnterAccount_OnClick(object sender, RoutedEventArgs e)
+        private async void EnterAccount_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            await SimpleIoc.Default.GetInstance<GetCoursesService>().LoginAndGetCoursesAsync(NameBox.Text, PswBox.Password);
         }
 
         private void NotEnterAccount_OnClick(object sender, RoutedEventArgs e)
