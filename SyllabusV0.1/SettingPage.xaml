@@ -47,24 +47,11 @@
                             <PasswordBox Name="PswBox"
                                          RelativePanel.RightOf="BeforePsw"/>
                         </RelativePanel>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"></ColumnDefinition>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="Auto"></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
-                            <Button Content="确认"
+                        <Button Content="登录并同步"
                                     Name="EnterAccount"
                                     HorizontalAlignment="Left"
-                                    Grid.Column="0"
                                     Click="EnterAccount_OnClick" />
-                            <Button Content="取消"
-                                    Name="NotEnterAccount"
-                                    HorizontalAlignment="Right"
-                                    Grid.Column="2"
-                                    Click="NotEnterAccount_OnClick"></Button>
-                        </Grid>
-                        
+
                     </StackPanel>
                 </Flyout>
             </Button.Flyout>
@@ -102,24 +89,9 @@
                                      PlaceholderText="(选填)"
                                      RelativePanel.RightOf="BeforeTeacherName"/>
                         </RelativePanel>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"></ColumnDefinition>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="Auto"></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
-                            <Button Content="确认"
+                        <Button Content="添加"
                                     Name="EnterCourse"
-                                    HorizontalAlignment="Left"
-                                    Grid.Column="0"
                                     Click="EnterCourse_OnClick" />
-                            <Button Content="取消"
-                                    Name="NotEnterCourse"
-                                    HorizontalAlignment="Right"
-                                    Grid.Column="2"
-                                    Click="NotEnterCourse_OnClick"></Button>
-                        </Grid>
-
                     </StackPanel>
                 </Flyout>
             </Button.Flyout>
@@ -135,10 +107,19 @@
                     <Button>
                         <Button.Flyout>
                             <Flyout>
-                                <Button>
-                                    <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
-                                           Text="删除本课程" 
-                                           Margin="0,0,0,12" />
+                                <Button Name="DelCourse"
+                                        Tag="{x:Bind Name}"
+                                        Click="DelCourse_OnClick">
+                                    <RelativePanel>
+                                        <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                                   Text="删除" 
+                                                   Name="DeleteCourseTextBlock"                                               
+                                                   />
+                                        <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                                   Text="{x:Bind Name}" 
+                                                   RelativePanel.RightOf="DeleteCourseTextBlock"
+                                                   Margin="6,0,0,0"/>
+                                    </RelativePanel>
                                 </Button>
                                 
                             </Flyout>
@@ -189,23 +170,10 @@
                                             <TextBox Name="ChooseLocation"
                                                      Header="哪个教室？
                                                      "/>
-                                            <Grid>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
-                                                    <ColumnDefinition Width="*"></ColumnDefinition>
-                                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
-                                                </Grid.ColumnDefinitions>
-                                                <Button Content="确认"
+                                            <Button Content="添加"
                                                         Name="EnterTime"
                                                         HorizontalAlignment="Left"
-                                                        Grid.Column="0"
                                                         Click="EnterTime_OnClick" />
-                                                <Button Content="取消"
-                                                        Name="NotEnterTime"
-                                                        HorizontalAlignment="Right"
-                                                        Grid.Column="2"
-                                                        Click="NotEnterTime_OnClick"></Button>
-                                            </Grid>
                                         </StackPanel>
                                     </Flyout>
                                 </Button.Flyout>
@@ -221,8 +189,10 @@
                                         <DataTemplate x:DataType="services:LocTime">
                                             <Button>
                                                 <Button.Flyout>
-                                                    <Flyout>
-                                                        <Button>
+                                                    <Flyout >
+                                                        <Button Name="DelLoctime"
+                                                                Tag="{x:Bind Tag}"
+                                                                Click="DelLoctime_OnClick">
                                                             <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
                                                                        Text="删除本时间" 
                                                                        Margin="0,0,0,12" />

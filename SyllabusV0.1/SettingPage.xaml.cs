@@ -25,13 +25,13 @@ namespace SyllabusV0._1
     public sealed partial class SettingPage : Page
     {
         private Courses ViewModel { get; set; }
-        private LocTime NowLocTime { get; set; }
+        public LocTime NowLocTime;
 
         public SettingPage()
         {
-            this.InitializeComponent();
-            this.ViewModel = SimpleIoc.Default.GetInstance<Courses>();
-            this.NowLocTime = SimpleIoc.Default.GetInstance<LocTime>();
+            InitializeComponent();
+            ViewModel = SimpleIoc.Default.GetInstance<Courses>();
+            NowLocTime = SimpleIoc.Default.GetInstance<LocTime>();
         }
 
         private async void EnterAccount_OnClick(object sender, RoutedEventArgs e)
@@ -39,40 +39,41 @@ namespace SyllabusV0._1
             await SimpleIoc.Default.GetInstance<GetCoursesService>().LoginAndGetCoursesAsync(NameBox.Text, PswBox.Password);
         }
 
-        private void NotEnterAccount_OnClick(object sender, RoutedEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void EnterCourse_OnClick(object sender, RoutedEventArgs e)
+        private async void EnterCourse_OnClick(object sender, RoutedEventArgs e)
         {
             if (CourseNameBox.Text != "")
             {
-                if (!ViewModel.CourseCollection.Contains(new Course(CourseNameBox.Text, TeacherNameBox.Text)))//没有用？？
+                if (!ViewModel.Contains(CourseNameBox.Text))//没有用？？
                 {
                     this.ViewModel.Add(CourseNameBox.Text, TeacherNameBox.Text);
-                    //todo:关闭窗口
                 }
                 else
                 {
-                    //todo:通过某种手段弹出错误提示
+                    ContentDialog InvalidInputDialog = new ContentDialog()
+                    {
+                        Title = "课程名称重复",
+                        Content = "课程名称重复，请在已有课程中添加时间",
+                        CloseButtonText = "Ok"
+                    };
+                    await InvalidInputDialog.ShowAsync();
                 }
                 
             }
             else
             {
-                //todo:通过某种手段弹出错误提示
+                ContentDialog InvalidInputDialog = new ContentDialog()
+                {
+                    Title = "课程名称空",
+                    Content = "课程名称空，请填写课程名称",
+                    CloseButtonText = "Ok"
+                };
+                await InvalidInputDialog.ShowAsync();
             }
-        }
-
-        private void NotEnterCourse_OnClick(object sender, RoutedEventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         private void Selector_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            int idx = (int) ((sender as GridView).Tag) - 1;
         }
 
         private void ChooseWeekday_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -90,9 +91,16 @@ namespace SyllabusV0._1
             
         }
 
-        private void NotEnterTime_OnClick(object sender, RoutedEventArgs e)
+        private void DelCourse_OnClick(object sender, RoutedEventArgs e)
         {
-            //todo:关闭当前弹出窗口
+            ViewModel.Delete((sender as Button).Tag.ToString());
         }
+
+        private void DelLoctime_OnClick(object sender, RoutedEventArgs e)
+        {
+            int LocTimeTag = (int)(sender as Button).Tag;
+            ViewModel.DeleteLocTime(LocTimeTag);
+        }
+
     }
 }
