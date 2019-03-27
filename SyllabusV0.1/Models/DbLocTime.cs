@@ -15,7 +15,5 @@ namespace SyllabusV0._1.Models
         public int BeginTime { get; set; }
         public int EndTime { get; set; }
         public String Week { get; set; }
-        public String WeekForShow { get; set; }
-        public String TimeForShow { get; set; }
     }
 }

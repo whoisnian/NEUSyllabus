@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace SyllabusV0._1.Models
 {
@@ -13,8 +14,5 @@ namespace SyllabusV0._1.Models
         public String Name { get; set; }
         public String Teacher { get; set; }
         public List<DbLocTime> DbLocTimes { get; set; }
-
-        // 直接使用int会出错，无法创建表
-        public List<DbInt> WeekChoices { get; set; }
     }
 }
