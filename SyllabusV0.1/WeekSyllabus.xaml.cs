@@ -25,7 +25,10 @@ namespace SyllabusV0._1
         public WeekSyllabus()
         {
             this.InitializeComponent();
-
+            Week.Text = "第四周";
+            FF7011.Text = "操作系统";
+            FF7012.Text = "1号楼 B215";
+            FF7013.Text = "要交作业";
         }
     }
 }

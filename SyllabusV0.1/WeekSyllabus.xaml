@@ -41,7 +41,7 @@
         <TextBlock Grid.Row="1"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
-                   Text="第XX周"
+                   Name="Week"
                    FontSize="30"/>
 
         <TextBlock Grid.Row="2"
