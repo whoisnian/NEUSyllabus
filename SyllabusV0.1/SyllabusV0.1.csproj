@@ -129,8 +129,8 @@
     <Compile Include="Models\DataContext.cs" />
     <Compile Include="Models\DbInt.cs" />
     <Compile Include="Models\DbLocTime.cs" />
-    <Compile Include="NowPage.xaml.cs">
-      <DependentUpon>NowPage.xaml</DependentUpon>
+    <Compile Include="WeekSyllabus.xaml.cs">
+      <DependentUpon>WeekSyllabus.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Course.cs" />
@@ -170,7 +170,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="NowPage.xaml">
+    <Page Include="WeekSyllabus.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
