@@ -15,6 +15,7 @@ namespace SyllabusV0._1.Services
         /// <summary>
         /// 爬取课程表
         /// 注意打不开新版树维教务系统网站时会抛出异常，需要增加判断，树维教务系统：http://219.216.96.4/eams/loginExt.action
+        /// 注意返回的Course未合并相同Name的项
         /// </summary>
         /// <param name="username">树维教务系统用户名</param>
         /// <param name="password">树维教务系统密码</param>
@@ -95,23 +96,56 @@ namespace SyllabusV0._1.Services
             string pattern = @"var actTeachers = \[(?:{id:(\d+),name:""([^""]+)"",lab:(?:false|true)},?)+\];(?:\s|\S)+?TaskActivity\(actTeacherId.join\(','\),actTeacherName.join\(','\),""(.*)"",""(.*)\(.*\)"",""(.*)"",""(.*)"",""(.*)"",null,null,assistantName,"""",""""\);(\s*index =(\d+)\*unitCount\+(\d+);\s*.*\s)+";
 
             // 查看正则匹配结果
+            List<Course> courses = new List<Course>();
             foreach (Match match in Regex.Matches(content, pattern))
             {
-                int groupCtr = 0;
-                foreach (Group group in match.Groups)
+                // 教师名字
+                Group group = match.Groups[2];
+                String teacherName = "";
+                foreach (Capture capture in group.Captures)
                 {
-                    groupCtr++;
-                    System.Diagnostics.Debug.WriteLine("   Group {0}: '{1}'", groupCtr, group.Value);
-                    int captureCtr = 0;
-                    foreach (Capture capture in group.Captures)
-                    {
-                        captureCtr++;
-                        System.Diagnostics.Debug.WriteLine("      Capture {0}: '{1}'", captureCtr, capture.Value);
-                    }
+                    if (teacherName == "")
+                        teacherName = capture.Value;
+                    else
+                        teacherName = teacherName + ", " + capture.Value;
                 }
+
+                // 课程名称
+                String courseName = match.Groups[4].Captures[0].Value;
+
+                // 教室地点
+                String location = match.Groups[6].Captures[0].Value;
+
+                // 上课周
+                String week = match.Groups[7].Captures[0].Value;
+
+                // 上课工作日
+                int weekDay;
+                int.TryParse(match.Groups[9].Captures[0].Value, out weekDay);
+
+                // 开始于第几节
+                int beginTime = 13;
+                // 结束于第几节
+                int endTime = -1;
+
+                int temp;
+                foreach (Capture capture in match.Groups[10].Captures)
+                {
+                    int.TryParse(capture.Value, out temp);
+                    if (temp < beginTime)
+                        beginTime = temp;
+                    if (temp > endTime)
+                        endTime = temp;
+                }
+                Course course = new Course();
+                course.Name = courseName;
+                course.Teacher = teacherName;
+                course.AddLocTime(location, week, weekDay, beginTime, endTime);
+                courses.Add(course);
+                System.Diagnostics.Debug.WriteLine(courseName + " " + teacherName);
             }
 
-            return new List<Course>();
+            return courses;
         }
     }
 }
