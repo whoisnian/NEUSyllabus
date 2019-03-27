@@ -25,6 +25,7 @@ namespace SyllabusV0._1
         public WeekSyllabus()
         {
             this.InitializeComponent();
+
         }
     }
 }
