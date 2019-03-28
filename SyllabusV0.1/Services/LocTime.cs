@@ -31,6 +31,23 @@ namespace SyllabusV0._1.Services
             if (day == 7) return "周日";
             return "周几";
         }
+
+        public void SolveWeek(IList<object> list)
+        {
+            Week = "";
+            for (int i = 0; i < 20; ++i)
+            {
+                if (list.Contains(i+1))
+                {
+                    Week += '1';
+                }
+                else
+                {
+                    Week += '0';
+                }
+            }
+        }
+
         public LocTime()
         {
             Week = "00000000000000000000";
@@ -69,11 +86,7 @@ namespace SyllabusV0._1.Services
                     if (preidx != i - 1)
                     {
                         WeekForShow += "-"+i.ToString();
-                    }
-                    else
-                    {
-                        WeekForShow += i.ToString();
-                    }                    
+                    }                   
                 }
 
                 pre = Week[i];
@@ -81,7 +94,7 @@ namespace SyllabusV0._1.Services
 
             WeekForShow += "周";
 
-            TimeForShow = ToHanzi(WeekDay)+" "+BeginTime+"-"+EndTime+"节";//todo
+            TimeForShow = ToHanzi(WeekDay)+" "+BeginTime+"-"+EndTime+"节";
             Tag = InputTag;
         }
 

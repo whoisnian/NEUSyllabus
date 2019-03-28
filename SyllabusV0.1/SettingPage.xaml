@@ -129,11 +129,12 @@
                                     Margin="0,0,12,0">
                                 <SymbolIcon Symbol="Add"/>
                                 <Button.Flyout>
-                                    <Flyout>
+                                    <Flyout Opened="FlyoutBase_OnOpened">
                                         <StackPanel Orientation="Vertical">
                                             <GridView SelectionMode="Multiple"                                                    
                                                       SelectionChanged="Selector_OnSelectionChanged"
                                                       ItemsSource="{x:Bind WeekChoices}"
+                                                      FocusDisengaged="Control_OnFocusDisengaged"
                                                       Width="250"
                                                       Header="哪些周？">
 
@@ -168,10 +169,12 @@
                                                 </ComboBox>
                                             </StackPanel>
                                             <TextBox Name="ChooseLocation"
+                                                     TextChanged="ChooseLocation_OnTextChanged"
                                                      Header="哪个教室？
                                                      "/>
                                             <Button Content="添加"
                                                         Name="EnterTime"
+                                                        Tag="{x:Bind Name}"
                                                         HorizontalAlignment="Left"
                                                         Click="EnterTime_OnClick" />
                                         </StackPanel>
@@ -201,9 +204,13 @@
                                                     </Flyout>
                                                 </Button.Flyout>
                                                 <StackPanel Orientation="Vertical" Margin="6">
-                                                    <TextBlock Text="{x:Bind Location}"/>
-                                                    <TextBlock Text="{x:Bind WeekForShow}"/>
-                                                    <TextBlock Text="{x:Bind TimeForShow}"/>
+                                                    <TextBlock Text="{x:Bind Location}"
+                                                               TextTrimming="WordEllipsis"
+                                                               Width="100"/>
+                                                    <TextBlock Text="{x:Bind WeekForShow}"
+                                                               TextTrimming="WordEllipsis"/>
+                                                    <TextBlock Text="{x:Bind TimeForShow}"
+                                                               TextTrimming="WordEllipsis"/>
                                                 </StackPanel>
                                             </Button>
                                         </DataTemplate>

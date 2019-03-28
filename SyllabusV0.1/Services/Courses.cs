@@ -52,6 +52,15 @@ namespace SyllabusV0._1.Services
             CourseCollection.Remove(DeletingCourse);
         }
 
+        public void AddLocTime(string InputName, LocTime InputLocTime)
+        {
+            foreach (var course in CourseCollection)
+            {
+                if (course.Name.Equals(InputName))
+                    course.AddLocTime(InputLocTime);
+            }
+        }
+
         public void DeleteLocTime(int Tag)
         {
             bool find=false;
