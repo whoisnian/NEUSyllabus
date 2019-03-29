@@ -5,13 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SyllabusV0._1.Models
+namespace Syllabus.Models
 {
     public class DataContext : DbContext
     {
+        /// <summary>
+        /// 课程数据库
+        /// </summary>
         public DbSet<DbCourse> DbCourses { get; set; }
 
-        // 限定课程名称唯一
+        /// <summary>
+        /// 限定课程名称唯一
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<DbCourse>()
@@ -19,7 +25,10 @@ namespace SyllabusV0._1.Models
                 .IsUnique();
         }
 
-        // 指定本地数据库
+        /// <summary>
+        /// 指定本地数据库
+        /// </summary>
+        /// <param name="optionsBuilder"></param>
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source=syllabus.db");
