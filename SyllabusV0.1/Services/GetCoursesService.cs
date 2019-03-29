@@ -140,9 +140,8 @@ namespace SyllabusV0._1.Services
                 Course course = new Course();
                 course.Name = courseName;
                 course.Teacher = teacherName;
-                course.AddLocTime(location, week, weekDay, beginTime, endTime);
+                course.AddLocTime(location, week, weekDay+1, beginTime+1, endTime+1);
                 courses.Add(course);
-                System.Diagnostics.Debug.WriteLine(courseName + " " + teacherName);
             }
 
             return courses;
