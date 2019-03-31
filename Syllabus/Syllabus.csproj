@@ -129,6 +129,7 @@
     <Compile Include="Models\DbCourse.cs" />
     <Compile Include="Models\DbLocTime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DatabaseService.cs" />
     <Compile Include="Services\GetCoursesService.cs" />
     <Compile Include="SettingPage.xaml.cs">
       <DependentUpon>SettingPage.xaml</DependentUpon>

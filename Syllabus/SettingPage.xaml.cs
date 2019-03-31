@@ -31,13 +31,19 @@ namespace Syllabus
         public SettingPage()
         {
             InitializeComponent();
-            ViewModel = SimpleIoc.Default.GetInstance<Courses>();
+            //ViewModel = SimpleIoc.Default.GetInstance<Courses>();
+            ViewModel = SimpleIoc.Default.GetInstance<DatabaseService>().GetAllCourses();
             NowLocTime = SimpleIoc.Default.GetInstance<LocTime>();
         }
 
         private async void EnterAccount_OnClick(object sender, RoutedEventArgs e)
         {
-            await SimpleIoc.Default.GetInstance<GetCoursesService>().LoginAndGetCoursesAsync(NameBox.Text, PswBox.Password);
+            List<Course> AllCourses = await SimpleIoc.Default.GetInstance<GetCoursesService>().LoginAndGetCoursesAsync(NameBox.Text, PswBox.Password);
+            foreach(var TempCourse in AllCourses)
+            {
+                SimpleIoc.Default.GetInstance<DatabaseService>().AddCourse(TempCourse);
+            }
+            ViewModel = SimpleIoc.Default.GetInstance<DatabaseService>().GetAllCourses();
         }
 
         private async void EnterCourse_OnClick(object sender, RoutedEventArgs e)

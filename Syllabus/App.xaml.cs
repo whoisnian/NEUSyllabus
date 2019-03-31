@@ -85,10 +85,11 @@ namespace Syllabus
                 // 创建数据库
                 // https://docs.microsoft.com/en-us/ef/core/managing-schemas/ensure-created
                 db.Database.EnsureCreated();
-                db.DbCourses.Add(new DbCourse { Name = "hello", Teacher = "world" });
-                db.SaveChanges();
+                //db.DbCourses.Add(new DbCourse { Name = "hello", Teacher = "world" });
+                //db.SaveChanges();
             }
             SimpleIoc.Default.Register<GetCoursesService>();
+            SimpleIoc.Default.Register<DatabaseService>();
             SimpleIoc.Default.Register<Courses>();
             SimpleIoc.Default.Register<LocTime>(() => new LocTime());
         }

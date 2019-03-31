@@ -8,7 +8,7 @@ namespace Syllabus.Models
 {
     public class DbCourse
     {
-        public int Id { get; set; }
+        public int DbCourseId { get; set; }
 
         /// <summary>
         /// 课程名称

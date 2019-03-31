@@ -8,7 +8,7 @@ namespace Syllabus.Models
 {
     public class DbLocTime
     {
-        public int Id { get; set; }
+        public int DbLocTimeId { get; set; }
 
         /// <summary>
         /// 上课地点
@@ -34,5 +34,9 @@ namespace Syllabus.Models
         /// 教学周（53个0和1组成的字符串）
         /// </summary>
         public String Week { get; set; }
+
+        // 关联到对应的课程
+        public int DbCourseId { get; set; }
+        public DbCourse DbCourse { get; set; }
     }
 }

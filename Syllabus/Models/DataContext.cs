@@ -15,6 +15,11 @@ namespace Syllabus.Models
         public DbSet<DbCourse> DbCourses { get; set; }
 
         /// <summary>
+        /// 上课时间数据库
+        /// </summary>
+        public DbSet<DbLocTime> DbLocTimes { get; set; }
+
+        /// <summary>
         /// 限定课程名称唯一
         /// </summary>
         /// <param name="modelBuilder"></param>

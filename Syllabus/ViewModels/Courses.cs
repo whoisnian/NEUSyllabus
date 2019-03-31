@@ -20,9 +20,9 @@ namespace Syllabus.ViewModels
         public Courses()
         {
             TagGenerator = 0;
-            this.CourseCollection.Add(new Course("高等数学", "王老师", 100000 * TagGenerator++));
-            this.CourseCollection.Add(new Course("线性代数", "渡边梨加", 100000 * TagGenerator++));
-            this.CourseCollection.Add(new Course("数理统计", "斋藤飞鸟", 100000 * TagGenerator++));
+            //this.CourseCollection.Add(new Course("高等数学", "王老师", 100000 * TagGenerator++));
+            //this.CourseCollection.Add(new Course("线性代数", "渡边梨加", 100000 * TagGenerator++));
+            //this.CourseCollection.Add(new Course("数理统计", "斋藤飞鸟", 100000 * TagGenerator++));
         }
 
         public void Add(String InputName, String InputTeacher)

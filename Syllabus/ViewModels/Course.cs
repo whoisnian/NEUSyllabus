@@ -23,8 +23,8 @@ namespace Syllabus.ViewModels
             Teacher = InputTeacher;
             TagGenerator = Tag;
             for (int i = 1; i <= 20; ++i) WeekChoices.Add(i);
-            AddLocTime("一号楼A104", "111111110000000000", 1, 3, 4);
-            AddLocTime("一号楼A105", "111111110011000000", 3, 5, 6);
+            //AddLocTime("一号楼A104", "111111110000000000", 1, 3, 4);
+            //AddLocTime("一号楼A105", "111111110011000000", 3, 5, 6);
         }
 
         public void AddLocTime(LocTime InputLocTime)
