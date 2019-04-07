@@ -24,8 +24,9 @@ namespace Syllabus.Services
         public async Task<List<Course>> LoginAndGetCoursesAsync(string Username, string Password)
         {
             string Url1 = "http://219.216.96.4/eams/loginExt.action";                       // 第一次请求和第二次请求
-            string Url2 = "http://219.216.96.4/eams/courseTableForStd!courseTable.action";  // 第三次请求
-            string Url3 = "http://219.216.96.4/eams/logout.action";                         // 第四次请求
+            string Url2 = "http://219.216.96.4/eams/courseTableForStd.action";              // 第三次请求
+            string Url3 = "http://219.216.96.4/eams/courseTableForStd!courseTable.action";  // 第四次请求
+            string Url4 = "http://219.216.96.4/eams/logout.action";                         // 第五次请求
 
             var Handler = new HttpClientHandler();
             HttpClient Client = new HttpClient(Handler);
@@ -68,6 +69,18 @@ namespace Syllabus.Services
             }
 
             // 第三次请求
+            Thread.Sleep(1000);
+            Response = await Client.GetAsync(Url2);
+            Content = await Response.Content.ReadAsStringAsync();
+            if (!Content.Contains("addInput(form,\"ids\""))
+            {
+                System.Diagnostics.Debug.WriteLine("error");
+                return null;
+            }
+            Content = Content.Substring(Content.IndexOf("if(jQuery(\"#courseTableType\").val()==\"std\"){"), 180);
+            string ids = Content.Substring(Content.IndexOf("bg.form.addInput(form") + 29, Content.IndexOf("\");") - Content.IndexOf("bg.form.addInput(form") - 29);
+
+            // 第四次请求
             Values = new Dictionary<string, string>
             {
                 {"ignoreHead", "1"},
@@ -75,13 +88,13 @@ namespace Syllabus.Services
                 {"setting.kind", "std"},
                 {"startWeek", ""},
                 {"semester.id", "30"},
-                {"ids", "39437"}
+                {"ids", ids}
             };
             FormContent = new FormUrlEncodedContent(Values);
 
             // 发送请求
             Thread.Sleep(1000);
-            Response = await Client.PostAsync(Url2, FormContent);
+            Response = await Client.PostAsync(Url3, FormContent);
             Content = await Response.Content.ReadAsStringAsync();
             if (!Content.Contains("课表格式说明"))
             {
@@ -89,9 +102,9 @@ namespace Syllabus.Services
                 return null;
             }
 
-            // 第四次请求
+            // 第五次请求
             Thread.Sleep(1000);
-            await Client.GetAsync(Url3);
+            await Client.GetAsync(Url4);
 
             // 解析得到的课程表数据
             string Pattern = @"var actTeachers = \[(?:{id:(\d+),name:""([^""]+)"",lab:(?:false|true)},?)+\];(?:\s|\S)+?TaskActivity\(actTeacherId.join\(','\),actTeacherName.join\(','\),""(.*)"",""(.*)\(.*\)"",""(.*)"",""(.*)"",""(.*)"",null,null,assistantName,"""",""""\);(\s*index =(\d+)\*unitCount\+(\d+);\s*.*\s)+";
