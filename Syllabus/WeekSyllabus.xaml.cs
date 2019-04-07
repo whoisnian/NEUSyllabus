@@ -33,6 +33,7 @@ namespace Syllabus
             this.Thursday = new OneDay();
             this.Friday = new OneDay();
             this.Saturday = new OneDay();
+            this.WhichWeek = 9;
         }
 
         public OneDay Sunday
@@ -77,6 +78,11 @@ namespace Syllabus
             set;
         }
 
+        /// <summary>
+        /// 表示第几周，使用Week有二义性
+        /// </summary>
+        public int WhichWeek;
 
+        
     }
 }

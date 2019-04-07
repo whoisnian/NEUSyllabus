@@ -41,7 +41,7 @@
             <TextBlock Grid.Row="1"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
-                   Name="Week"
+                   Text="{x:Bind WhichWeek}"
                    FontSize="30"/>
 
             <TextBlock Grid.Row="2"
