@@ -18,9 +18,16 @@ namespace Syllabus.ViewModels
 
         public OneClass()
         {
-            this.ClassName = "自习";
-            this.ClassSite = "1号楼B323";
-            this.ClassNote = "小老弟，好好学习，不然单身一辈子喽";
+            this.ClassName = "";
+            this.ClassSite = "";
+            this.ClassNote = "";
+        }
+
+        public OneClass(string newClassName, string newClassSite, string newClassNote)
+        {
+            ClassName = newClassName;
+            ClassSite = newClassSite;
+            ClassNote = newClassNote;
         }
 
         public string GetName

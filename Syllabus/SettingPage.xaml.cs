@@ -39,11 +39,33 @@ namespace Syllabus
         private async void EnterAccount_OnClick(object sender, RoutedEventArgs e)
         {
             List<Course> AllCourses = await SimpleIoc.Default.GetInstance<GetCoursesService>().LoginAndGetCoursesAsync(NameBox.Text, PswBox.Password);
-            foreach(var TempCourse in AllCourses)
+            if (AllCourses == null)
             {
-                SimpleIoc.Default.GetInstance<DatabaseService>().AddCourse(TempCourse);
+                ContentDialog WrongDialog = new ContentDialog()
+                {
+                    Title = "无课程信息",
+                    Content = "用户名或密码错误或教务处系统不工作，请重新尝试",
+                    CloseButtonText = "Ok"
+                };
+                await WrongDialog.ShowAsync();
             }
-            ViewModel = SimpleIoc.Default.GetInstance<DatabaseService>().GetAllCourses();
+            else
+            {
+                foreach (var TempCourse in AllCourses)
+                {
+                    SimpleIoc.Default.GetInstance<DatabaseService>().AddCourse(TempCourse);
+                }
+
+                ViewModel = SimpleIoc.Default.GetInstance<DatabaseService>().GetAllCourses();
+
+                ContentDialog SuccessDialog = new ContentDialog()
+                {
+                    Title = "成功导入课程信息",
+                    Content = "课程信息导入成功！",
+                    CloseButtonText = "Ok"
+                };
+                await SuccessDialog.ShowAsync();
+            }
         }
 
         private async void EnterCourse_OnClick(object sender, RoutedEventArgs e)
@@ -52,7 +74,8 @@ namespace Syllabus
             {
                 if (!ViewModel.Contains(CourseNameBox.Text))//没有用？？
                 {
-                    this.ViewModel.Add(CourseNameBox.Text, TeacherNameBox.Text);
+                    ViewModel.Add(CourseNameBox.Text, TeacherNameBox.Text);
+                    SimpleIoc.Default.GetInstance<DatabaseService>().AddCourse(new Course(CourseNameBox.Text, TeacherNameBox.Text));
                 }
                 else
                 {
@@ -127,6 +150,8 @@ namespace Syllabus
         private void EnterTime_OnClick(object sender, RoutedEventArgs e)
         {
             ViewModel.AddLocTime((sender as Button).Tag.ToString(), NowLocTime);
+            SimpleIoc.Default.GetInstance<DatabaseService>().AddCourse(ViewModel.Find((sender as Button).Tag.ToString()));
+
         }
 
         private void DelCourse_OnClick(object sender, RoutedEventArgs e)

@@ -13,13 +13,14 @@ namespace Syllabus.ViewModels
         /// Courses are specified by its "course.Name", so two courses can not have one same Name.
         /// Use method "Contains" to avoid that.
         /// </summary>
-        public ObservableCollection<Course> CourseCollection = new ObservableCollection<Course>();
+        public ObservableCollection<Course> CourseCollection;
 
         public int TagGenerator;
 
         public Courses()
         {
             TagGenerator = 0;
+            CourseCollection = new ObservableCollection<Course>();
             //this.CourseCollection.Add(new Course("高等数学", "王老师", 100000 * TagGenerator++));
             //this.CourseCollection.Add(new Course("线性代数", "渡边梨加", 100000 * TagGenerator++));
             //this.CourseCollection.Add(new Course("数理统计", "斋藤飞鸟", 100000 * TagGenerator++));
@@ -30,6 +31,12 @@ namespace Syllabus.ViewModels
             this.CourseCollection.Add(new Course(InputName, InputTeacher, 100000 * TagGenerator++));
         }
 
+        public void Add(Course InputCourse)
+        {
+            InputCourse.SetTag(100000 * TagGenerator++);
+            this.CourseCollection.Add(InputCourse);
+        }
+
         public bool Contains(String InputName)
         {
             foreach (var course in CourseCollection)
@@ -38,6 +45,16 @@ namespace Syllabus.ViewModels
                     return true;
             }
             return false;
+        }
+
+        public Course Find(String InputName)
+        {
+            foreach (var course in CourseCollection)
+            {
+                if (course.Name.Equals(InputName))
+                    return course;
+            }
+            return new Course();
         }
 
         public void Delete(String InputName)

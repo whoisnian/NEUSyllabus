@@ -12,11 +12,10 @@
     <Grid FlyoutBase.AttachedFlyout="{StaticResource TextControlCommandBarContextFlyout}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="8*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Button Content="同步教务处课程"
                 Name="AutoAddCourse"
@@ -101,7 +100,8 @@
                   Name="AllCoursesList"
                   Grid.Row="3"
                   Margin="50,25,0,0"
-                  HorizontalAlignment="Left">
+                  HorizontalAlignment="Left"
+                  CanBeScrollAnchor="True">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="ViewModels:Course">
                     <Button>

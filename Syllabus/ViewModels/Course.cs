@@ -17,7 +17,7 @@ namespace Syllabus.ViewModels
 
         public Course() { TagGenerator = 0; }
 
-        public Course(String InputName, String InputTeacher, int Tag)
+        public Course(String InputName, String InputTeacher, int Tag=0)
         {
             Name = InputName;
             Teacher = InputTeacher;
@@ -35,6 +35,11 @@ namespace Syllabus.ViewModels
         public void AddLocTime(String InputLocation, String InputWeek, int InputWeekDay, int InputBeginTime, int InputEndTime)
         {
             LocTimes.Add(new LocTime(InputLocation, InputWeek, InputWeekDay, InputBeginTime, InputEndTime, TagGenerator++));
+        }
+
+        public void SetTag(int InputTag)
+        {
+            TagGenerator = InputTag;
         }
 
         public void DeleteLocTime(int Tag)
