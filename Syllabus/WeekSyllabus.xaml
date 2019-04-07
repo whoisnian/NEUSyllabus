@@ -144,62 +144,80 @@
 
             <StackPanel Grid.Row="2"
                         Background="SpringGreen">
-                <TextBlock Name="FF7011"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF7012"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF7013"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[0].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[0].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[0].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
                         Background="Aqua">
-                <TextBlock Name="FF7021"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF7022"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF7023"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[1].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[1].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[1].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
                         Background="SpringGreen">
-                <TextBlock Name="FF7031"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF7032"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF7033"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[2].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[2].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[2].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
                         Background="Aqua">
-                <TextBlock Name="FF7041"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF7042"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF7043"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[3].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[3].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[3].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
                         Background="SpringGreen">
-                <TextBlock Name="FF7051"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF7052"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF7053"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[4].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[4].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[4].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
                         Background="Aqua">
-                <TextBlock Name="FF7061"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF7062"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF7063"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[5].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[4].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Sunday.Oneday[4].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
         </Grid>
@@ -228,62 +246,80 @@
 
             <StackPanel Grid.Row="2"
                         Background="HotPink">
-                <TextBlock Name="FF1011"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF1012"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF1013"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[0].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[0].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[0].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
                         Background="LightGoldenrodYellow">
-                <TextBlock Name="FF1021"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF1022"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF1023"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[1].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[1].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[1].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
                         Background="HotPink">
-                <TextBlock Name="FF1031"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF1032"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF1033"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[2].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[2].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[2].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
                         Background="LightGoldenrodYellow">
-                <TextBlock Name="FF1041"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF1042"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF1043"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[3].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[3].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[3].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
                         Background="HotPink">
-                <TextBlock Name="FF1051"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF1052"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF1053"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[4].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[4].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[4].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
                         Background="LightGoldenrodYellow">
-                <TextBlock Name="FF1061"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF1062"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF1063"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[5].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[5].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Monday.Oneday[5].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
         </Grid>
@@ -312,62 +348,80 @@
 
             <StackPanel Grid.Row="2"
                         Background="SpringGreen">
-                <TextBlock Name="FF2011"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF2012"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF2013"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[0].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[0].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[0].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
                         Background="Aqua">
-                <TextBlock Name="FF2021"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF2022"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF2023"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[1].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[1].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[1].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
                         Background="SpringGreen">
-                <TextBlock Name="FF2031"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF2032"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF2033"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[2].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[2].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[2].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
                         Background="Aqua">
-                <TextBlock Name="FF2041"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF2042"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF2043"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[3].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[3].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[3].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
                         Background="SpringGreen">
-                <TextBlock Name="FF2051"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF2052"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF2053"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[4].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[4].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[4].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
                         Background="Aqua">
-                <TextBlock Name="FF2061"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF2062"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF2063"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[5].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[5].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Tuesday.Oneday[5].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
         </Grid>
@@ -396,62 +450,80 @@
 
             <StackPanel Grid.Row="2"
                         Background="HotPink">
-                <TextBlock Name="FF3011"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF3012"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF3013"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[0].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[0].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[0].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
                         Background="LightGoldenrodYellow">
-                <TextBlock Name="FF3021"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF3022"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF3023"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[1].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[1].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[1].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
                         Background="HotPink">
-                <TextBlock Name="FF3031"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF3032"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF3033"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[2].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[2].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[2].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
                         Background="LightGoldenrodYellow">
-                <TextBlock Name="FF3041"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF3042"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF3043"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[3].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[3].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[3].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
                         Background="HotPink">
-                <TextBlock Name="FF3051"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF3052"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF3053"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[4].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[4].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[4].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
                         Background="LightGoldenrodYellow">
-                <TextBlock Name="FF3061"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF3062"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF3063"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[5].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[5].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Wednesday.Oneday[5].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
         </Grid>
@@ -480,62 +552,80 @@
 
             <StackPanel Grid.Row="2"
                         Background="SpringGreen">
-                <TextBlock Name="FF4011"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF4012"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF4013"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[0].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[0].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[0].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
                         Background="Aqua">
-                <TextBlock Name="FF4021"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF4022"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF4023"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[1].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[1].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[1].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
                         Background="SpringGreen">
-                <TextBlock Name="FF4031"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF4032"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF4033"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[2].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[2].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[2].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
                         Background="Aqua">
-                <TextBlock Name="FF4041"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF4042"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF4043"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[3].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[3].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[3].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
                         Background="SpringGreen">
-                <TextBlock Name="FF4051"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF4052"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF4053"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[4].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[4].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[4].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
                         Background="Aqua">
-                <TextBlock Name="FF4061"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF4062"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF4063"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[5].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[5].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Thursday.Oneday[5].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
         </Grid>
@@ -564,62 +654,80 @@
 
             <StackPanel Grid.Row="2"
                         Background="HotPink">
-                <TextBlock Name="FF5011"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF5012"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF5013"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[0].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[0].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[0].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
                         Background="LightGoldenrodYellow">
-                <TextBlock Name="FF5021"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF5022"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF5023"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[1].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[1].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[1].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
                         Background="HotPink">
-                <TextBlock Name="FF5031"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF5032"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF5033"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[2].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[2].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[2].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
                         Background="LightGoldenrodYellow">
-                <TextBlock Name="FF5041"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF5042"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF5043"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[3].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[3].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[3].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
                         Background="HotPink">
-                <TextBlock Name="FF5051"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF5052"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF5053"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[4].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[4].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[4].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
                         Background="LightGoldenrodYellow">
-                <TextBlock Name="FF5061"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF5062"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF5063"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[5].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[5].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Friday.Oneday[5].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
         </Grid>
@@ -648,62 +756,80 @@
 
             <StackPanel Grid.Row="2"
                         Background="SpringGreen">
-                <TextBlock Name="FF6011"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF6012"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF6013"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[0].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[0].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[0].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
                         Background="Aqua">
-                <TextBlock Name="FF6021"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF6022"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF6023"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[1].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[1].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[1].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
                         Background="SpringGreen">
-                <TextBlock Name="FF6031"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF6032"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF6033"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[2].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[2].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[2].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
                         Background="Aqua">
-                <TextBlock Name="FF6041"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF6042"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF6043"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[3].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[3].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[3].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
                         Background="SpringGreen">
-                <TextBlock Name="FF6051"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF6052"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF6053"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[4].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[4].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[4].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
                         Background="Aqua">
-                <TextBlock Name="FF6061"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF6062"
-                           TextWrapping="Wrap"/>
-                <TextBlock Name="FF6063"
-                           TextWrapping="Wrap"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[5].ClassName}"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[5].ClassSite}"
+                           TextWrapping="Wrap"
+                           Margin="0,2,0,0"/>
+                <TextBlock Text="{x:Bind Saturday.Oneday[5].ClassNote}"
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
             </StackPanel>
 
         </Grid>

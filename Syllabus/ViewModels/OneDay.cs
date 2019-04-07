@@ -43,7 +43,7 @@ namespace Syllabus.ViewModels
         {
             get
             {
-                return this.ClassNote;
+                 return this.ClassNote;
             }
         }
 

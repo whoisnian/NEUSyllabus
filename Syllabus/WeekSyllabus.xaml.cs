@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Syllabus.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,10 +26,57 @@ namespace Syllabus
         public WeekSyllabus()
         {
             this.InitializeComponent();
-            Week.Text = "第四周";
-            FF7011.Text = "操作系统";
-            FF7012.Text = "1号楼 B215";
-            FF7013.Text = "要交作业";
+            this.Sunday = new OneDay();
+            this.Monday = new OneDay();
+            this.Tuesday = new OneDay();
+            this.Wednesday = new OneDay();
+            this.Thursday = new OneDay();
+            this.Friday = new OneDay();
+            this.Saturday = new OneDay();
         }
+
+        public OneDay Sunday
+        {
+            get;
+            set;
+        }
+
+        public OneDay Monday
+        {
+            get;
+            set;
+        }
+
+        public OneDay Tuesday
+        {
+            get;
+            set;
+        }
+
+        public OneDay Wednesday
+        {
+            get;
+            set;
+        }
+
+        public OneDay Thursday
+        {
+            get;
+            set;
+        }
+
+        public OneDay Friday
+        {
+            get;
+            set;
+        }
+
+        public OneDay Saturday
+        {
+            get;
+            set;
+        }
+
+
     }
 }
