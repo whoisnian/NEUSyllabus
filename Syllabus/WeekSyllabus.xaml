@@ -38,11 +38,24 @@
                 <RowDefinition Height="0.5*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Grid.Row="1"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   Text="{x:Bind WhichWeek}"
-                   FontSize="30"/>
+            <ComboBox Grid.Row="1"
+                      Name="ChooseWeek"
+                      Width="90"
+                      PlaceholderText="1"
+                      IsEditable="True"
+                      SelectionChanged="ChooseWeek_SelectionChanged"
+                      TextSubmitted="ComboBox_TextSubmitted"
+                      
+                      >
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Week}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+
+            </ComboBox>
 
             <TextBlock Grid.Row="2"
                    HorizontalAlignment="Center"

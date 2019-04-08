@@ -1,6 +1,7 @@
 ﻿using Syllabus.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -33,9 +34,19 @@ namespace Syllabus
             this.Thursday = new OneDay();
             this.Friday = new OneDay();
             this.Saturday = new OneDay();
-            this.WhichWeek = 9;
             this.MyColor = "#32FF74";
+
+            ObservableCollection<ViewModelWeekList> WeekList = new ObservableCollection<ViewModelWeekList>();
+            for (int count = 1; count < 54; count++)
+            {
+                WeekList.Add(new ViewModelWeekList { Week = count});
+            }
+
+            ChooseWeek.ItemsSource = WeekList;
+
+
         }
+        
 
         public OneDay Sunday
         {
@@ -79,12 +90,9 @@ namespace Syllabus
             set;
         }
 
-        /// <summary>
-        /// 表示第几周，使用Week有二义性
-        /// </summary>
         public int WhichWeek;
-
         public string MyColor;
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -99,5 +107,17 @@ namespace Syllabus
                 this.Sunday.Oneday[0].ClassNote = NoteBox.Text;
             }
         }
+
+        private void ChooseWeek_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void ComboBox_TextSubmitted(ComboBox sender, ComboBoxTextSubmittedEventArgs args)
+        {
+
+        }
+
+
     }
 }
