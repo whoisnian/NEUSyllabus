@@ -101,7 +101,8 @@
                   Grid.Row="3"
                   Margin="50,25,0,0"
                   HorizontalAlignment="Left"
-                  CanBeScrollAnchor="True">
+                  CanBeScrollAnchor="True"
+                  >
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="ViewModels:Course">
                     <Button>
@@ -136,6 +137,7 @@
                                                       ItemsSource="{x:Bind WeekChoices}"
                                                       FocusDisengaged="Control_OnFocusDisengaged"
                                                       Width="250"
+                                                      IsMultiSelectCheckBoxEnabled="False"
                                                       Header="哪些周？">
 
                                             </GridView>
