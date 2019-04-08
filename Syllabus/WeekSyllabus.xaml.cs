@@ -86,6 +86,18 @@ namespace Syllabus
 
         public string MyColor;
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
+
+        private void EnterNote_Click(object sender, RoutedEventArgs e)
+        {
+            if (NoteBox.Text != "")
+            {
+                //应该存到数据库里去；
+                this.Sunday.Oneday[0].ClassNote = NoteBox.Text;
+            }
+        }
     }
 }

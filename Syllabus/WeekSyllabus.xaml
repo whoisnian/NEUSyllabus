@@ -150,10 +150,37 @@
                 <TextBlock Text="{x:Bind Sunday.Oneday[0].ClassSite}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Sunday.Oneday[0].ClassNote}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
+
+                <StackPanel Margin="0,5,0,0"
+                            Orientation="Horizontal">
+                    <Button Content="+"
+                            Click="Button_Click"
+                            FontWeight="Black"
+                            FontSize="10">
+                        <Button.Flyout>
+                            <Flyout>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                               Text="请填写小便签" />
+                                    <TextBox Name="NoteBox"
+                                                 VerticalAlignment="Center"
+                                                 PlaceholderText="好好学习"/>
+                                    <Button Content="添加"
+                                            Name="EnterNote"
+                                            Click="EnterNote_Click"/>
+
+                                </StackPanel>
+                            </Flyout>
+                        </Button.Flyout>
+
+                    </Button>
+                    <TextBlock Text="{x:Bind Sunday.Oneday[0].ClassNote}"
+                               TextWrapping="Wrap"
+                               />
+                </StackPanel>
+
             </StackPanel>
+
 
             <StackPanel Grid.Row="3"
                         Background="Aqua">
