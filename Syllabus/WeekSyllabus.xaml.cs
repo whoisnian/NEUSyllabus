@@ -34,6 +34,7 @@ namespace Syllabus
             this.Friday = new OneDay();
             this.Saturday = new OneDay();
             this.WhichWeek = 9;
+            this.MyColor = "#32FF74";
         }
 
         public OneDay Sunday
@@ -83,6 +84,8 @@ namespace Syllabus
         /// </summary>
         public int WhichWeek;
 
-        
+        public string MyColor;
+
+
     }
 }

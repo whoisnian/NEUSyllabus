@@ -143,7 +143,7 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="SpringGreen">
+                        Background="{x:Bind MyColor}">
                 <TextBlock Text="{x:Bind Sunday.Oneday[0].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>

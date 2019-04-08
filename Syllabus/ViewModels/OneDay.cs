@@ -20,7 +20,7 @@ namespace Syllabus.ViewModels
         {
             this.ClassName = "";
             this.ClassSite = "";
-            this.ClassNote = "";
+            this.ClassNote = "...";
         }
 
         public OneClass(string newClassName, string newClassSite, string newClassNote)
