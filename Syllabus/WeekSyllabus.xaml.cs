@@ -34,15 +34,17 @@ namespace Syllabus
             this.Thursday = new OneDay();
             this.Friday = new OneDay();
             this.Saturday = new OneDay();
-            this.MyColor = "#32FF74";
+            
 
-            ObservableCollection<ViewModelWeekList> WeekList = new ObservableCollection<ViewModelWeekList>();
+            List<ViewModelWeekList> WeekList = new List<ViewModelWeekList>();
             for (int count = 1; count < 54; count++)
             {
-                WeekList.Add(new ViewModelWeekList { Week = count});
+                WeekList.Add(new ViewModelWeekList { Week = count.ToString()});
             }
 
             ChooseWeek.ItemsSource = WeekList;
+
+            this.MyColor = "#32FF74";
 
 
         }
@@ -110,14 +112,15 @@ namespace Syllabus
 
         private void ChooseWeek_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            if (ChooseWeek.SelectedItem != null)
+            {
+                //可以得到被选择的数据；
+                ViewModelWeekList SelectedWeek = ChooseWeek.SelectedItem as ViewModelWeekList;
+                Text.Text = SelectedWeek.Week;
+            }
         }
 
-        private void ComboBox_TextSubmitted(ComboBox sender, ComboBoxTextSubmittedEventArgs args)
-        {
-
-        }
-
+       
 
     }
 }

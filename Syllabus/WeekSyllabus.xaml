@@ -38,24 +38,26 @@
                 <RowDefinition Height="0.5*"/>
             </Grid.RowDefinitions>
 
-            <ComboBox Grid.Row="1"
-                      Name="ChooseWeek"
-                      Width="90"
-                      PlaceholderText="1"
-                      IsEditable="True"
-                      SelectionChanged="ChooseWeek_SelectionChanged"
-                      TextSubmitted="ComboBox_TextSubmitted"
-                      
-                      >
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel>
-                            <TextBlock Text="{Binding Week}"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
+            <StackPanel Orientation="Vertical"
+                        Grid.Row="1">
+                <ComboBox 
+                          Name="ChooseWeek"
+                          Width="90"
+                          PlaceholderText="1"      
+                          SelectionChanged="ChooseWeek_SelectionChanged">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate >
+                            <StackPanel>
+                                <TextBlock Text="{Binding Week}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
 
-            </ComboBox>
+                </ComboBox>
+                <TextBlock  
+                           Name="Text"/>
+            </StackPanel>
+            
 
             <TextBlock Grid.Row="2"
                    HorizontalAlignment="Center"
