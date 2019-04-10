@@ -34,7 +34,6 @@ namespace Syllabus
             this.Thursday = new OneDay();
             this.Friday = new OneDay();
             this.Saturday = new OneDay();
-            this.MyColor = "#32FF74";
 
 
             //Week选择
@@ -107,11 +106,15 @@ namespace Syllabus
             if (NoteBox.Text != "")
             {
                 //应该存到数据库里去；
+               //目前只是把它显示了出来；但是切换页面后就没有了；
                 this.Sunday.Oneday[0].ClassNote = NoteBox.Text;
-                Bindings.Update();
+                
+                Bindings.Update();  //在Note的Layout上写完数据后要通过这句话刷新一下才可以；
             }
         }
 
+
+        //选择的Week;
         private void ChooseWeek_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (ChooseWeek.SelectedItem != null)
