@@ -158,7 +158,7 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="{x:Bind MyColor}">
+                        Background="{x:Bind Sunday.Oneday[0].ClassColor}">
                 <TextBlock Text="{x:Bind Sunday.Oneday[0].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -194,7 +194,7 @@
 
 
             <StackPanel Grid.Row="3"
-                        Background="Aqua">
+                        Background="{x:Bind Sunday.Oneday[1].ClassColor}">
                 <TextBlock Text="{x:Bind Sunday.Oneday[1].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -207,7 +207,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="SpringGreen">
+                        Background="{x:Bind Sunday.Oneday[2].ClassColor}">
                 <TextBlock Text="{x:Bind Sunday.Oneday[2].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -220,7 +220,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="Aqua">
+                        Background="{x:Bind Sunday.Oneday[3].ClassColor}">
                 <TextBlock Text="{x:Bind Sunday.Oneday[3].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -233,7 +233,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="SpringGreen">
+                        Background="{x:Bind Sunday.Oneday[4].ClassColor}">
                 <TextBlock Text="{x:Bind Sunday.Oneday[4].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -246,7 +246,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="Aqua">
+                        Background="{x:Bind Sunday.Oneday[5].ClassColor}">
                 <TextBlock Text="{x:Bind Sunday.Oneday[5].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -283,7 +283,7 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="HotPink">
+                        Background="{x:Bind Monday.Oneday[0].ClassColor}">
                 <TextBlock Text="{x:Bind Monday.Oneday[0].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -296,7 +296,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="3"
-                        Background="LightGoldenrodYellow">
+                        Background="{x:Bind Monday.Oneday[1].ClassColor}">
                 <TextBlock Text="{x:Bind Monday.Oneday[1].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -309,7 +309,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="HotPink">
+                        Background="{x:Bind Monday.Oneday[2].ClassColor}">
                 <TextBlock Text="{x:Bind Monday.Oneday[2].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -322,7 +322,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="LightGoldenrodYellow">
+                        Background="{x:Bind Monday.Oneday[3].ClassColor}">
                 <TextBlock Text="{x:Bind Monday.Oneday[3].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -335,7 +335,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="HotPink">
+                        Background="{x:Bind Monday.Oneday[4].ClassColor}">
                 <TextBlock Text="{x:Bind Monday.Oneday[4].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -348,7 +348,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="LightGoldenrodYellow">
+                        Background="{x:Bind Monday.Oneday[5].ClassColor}">
                 <TextBlock Text="{x:Bind Monday.Oneday[5].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -385,7 +385,7 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="SpringGreen">
+                        Background="{x:Bind Tuesday.Oneday[0].ClassColor}">
                 <TextBlock Text="{x:Bind Tuesday.Oneday[0].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -398,7 +398,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="3"
-                        Background="Aqua">
+                        Background="{x:Bind Tuesday.Oneday[1].ClassColor}">
                 <TextBlock Text="{x:Bind Tuesday.Oneday[1].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -411,7 +411,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="SpringGreen">
+                        Background="{x:Bind Tuesday.Oneday[2].ClassColor}">
                 <TextBlock Text="{x:Bind Tuesday.Oneday[2].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -424,7 +424,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="Aqua">
+                        Background="{x:Bind Tuesday.Oneday[3].ClassColor}">
                 <TextBlock Text="{x:Bind Tuesday.Oneday[3].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -437,7 +437,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="SpringGreen">
+                        Background="{x:Bind Tuesday.Oneday[4].ClassColor}">
                 <TextBlock Text="{x:Bind Tuesday.Oneday[4].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -450,7 +450,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="Aqua">
+                        Background="{x:Bind Tuesday.Oneday[5].ClassColor}">
                 <TextBlock Text="{x:Bind Tuesday.Oneday[5].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -487,7 +487,7 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="HotPink">
+                        Background="{x:Bind Wednesday.Oneday[0].ClassColor}">
                 <TextBlock Text="{x:Bind Wednesday.Oneday[0].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -500,7 +500,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="3"
-                        Background="LightGoldenrodYellow">
+                        Background="{x:Bind Wednesday.Oneday[1].ClassColor}">
                 <TextBlock Text="{x:Bind Wednesday.Oneday[1].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -513,7 +513,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="HotPink">
+                        Background="{x:Bind Wednesday.Oneday[2].ClassColor}">
                 <TextBlock Text="{x:Bind Wednesday.Oneday[2].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -526,7 +526,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="LightGoldenrodYellow">
+                        Background="{x:Bind Wednesday.Oneday[3].ClassColor}">
                 <TextBlock Text="{x:Bind Wednesday.Oneday[3].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -539,7 +539,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="HotPink">
+                        Background="{x:Bind Wednesday.Oneday[4].ClassColor}">
                 <TextBlock Text="{x:Bind Wednesday.Oneday[4].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -552,7 +552,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="LightGoldenrodYellow">
+                        Background="{x:Bind Wednesday.Oneday[5].ClassColor}">
                 <TextBlock Text="{x:Bind Wednesday.Oneday[5].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -589,7 +589,7 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="SpringGreen">
+                        Background="{x:Bind Thursday.Oneday[0].ClassColor}">
                 <TextBlock Text="{x:Bind Thursday.Oneday[0].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -602,7 +602,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="3"
-                        Background="Aqua">
+                        Background="{x:Bind Thursday.Oneday[1].ClassColor}">
                 <TextBlock Text="{x:Bind Thursday.Oneday[1].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -615,7 +615,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="SpringGreen">
+                        Background="{x:Bind Thursday.Oneday[2].ClassColor}">
                 <TextBlock Text="{x:Bind Thursday.Oneday[2].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -628,7 +628,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="Aqua">
+                        Background="{x:Bind Thursday.Oneday[3].ClassColor}">
                 <TextBlock Text="{x:Bind Thursday.Oneday[3].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -641,7 +641,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="SpringGreen">
+                        Background="{x:Bind Thursday.Oneday[4].ClassColor}">
                 <TextBlock Text="{x:Bind Thursday.Oneday[4].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -654,7 +654,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="Aqua">
+                        Background="{x:Bind Thursday.Oneday[5].ClassColor}">
                 <TextBlock Text="{x:Bind Thursday.Oneday[5].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -691,7 +691,7 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="HotPink">
+                        Background="{x:Bind Friday.Oneday[0].ClassColor}">
                 <TextBlock Text="{x:Bind Friday.Oneday[0].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -704,7 +704,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="3"
-                        Background="LightGoldenrodYellow">
+                        Background="{x:Bind Friday.Oneday[1].ClassColor}">
                 <TextBlock Text="{x:Bind Friday.Oneday[1].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -717,7 +717,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="HotPink">
+                        Background="{x:Bind Friday.Oneday[2].ClassColor}">
                 <TextBlock Text="{x:Bind Friday.Oneday[2].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -730,7 +730,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="LightGoldenrodYellow">
+                        Background="{x:Bind Friday.Oneday[3].ClassColor}">
                 <TextBlock Text="{x:Bind Friday.Oneday[3].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -743,7 +743,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="HotPink">
+                        Background="{x:Bind Friday.Oneday[4].ClassColor}">
                 <TextBlock Text="{x:Bind Friday.Oneday[4].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -756,7 +756,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="LightGoldenrodYellow">
+                        Background="{x:Bind Friday.Oneday[5].ClassColor}">
                 <TextBlock Text="{x:Bind Friday.Oneday[5].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -793,7 +793,7 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="SpringGreen">
+                        Background="{x:Bind Saturday.Oneday[0].ClassColor}">
                 <TextBlock Text="{x:Bind Saturday.Oneday[0].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -806,7 +806,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="3"
-                        Background="Aqua">
+                        Background="{x:Bind Saturday.Oneday[1].ClassColor}">
                 <TextBlock Text="{x:Bind Saturday.Oneday[1].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -819,7 +819,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="SpringGreen">
+                        Background="{x:Bind Saturday.Oneday[2].ClassColor}">
                 <TextBlock Text="{x:Bind Saturday.Oneday[2].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -832,7 +832,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="Aqua">
+                        Background="{x:Bind Saturday.Oneday[3].ClassColor}">
                 <TextBlock Text="{x:Bind Saturday.Oneday[3].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -845,7 +845,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="SpringGreen">
+                        Background="{x:Bind Saturday.Oneday[4].ClassColor}">
                 <TextBlock Text="{x:Bind Saturday.Oneday[4].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
@@ -858,7 +858,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="Aqua">
+                        Background="{x:Bind Saturday.Oneday[5].ClassColor}">
                 <TextBlock Text="{x:Bind Saturday.Oneday[5].ClassName}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
