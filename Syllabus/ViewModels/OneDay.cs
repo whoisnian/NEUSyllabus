@@ -12,9 +12,9 @@ namespace Syllabus.ViewModels
     /// </summary>
     public class OneClass
     {
-        public string ClassName;
-        public string ClassSite;
-        public string ClassNote;
+        public string ClassName{get;set;}
+        public string ClassSite{get;set;}
+        public string ClassNote{get;set;}
 
         /// <summary>
         /// 颜色可以使用
@@ -36,6 +36,7 @@ namespace Syllabus.ViewModels
             this.ClassName = "";
             this.ClassSite = "";
             this.ClassNote = "";
+            this.ClassColor = "#FFFFFF";
         }
 
         public OneClass(string newClassName, string newClassSite, string newClassNote)
