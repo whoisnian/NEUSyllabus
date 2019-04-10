@@ -15,7 +15,21 @@ namespace Syllabus.ViewModels
         public string ClassName;
         public string ClassSite;
         public string ClassNote;
+
+        /// <summary>
+        /// 颜色可以使用
+        /// SpringGreen
+        /// Aqua
+        /// HotPink
+        /// LightGoldenrodYellow
+        /// 这样的英文字母
+        /// 参考网址：https://docs.microsoft.com/en-us/uwp/api/windows.ui.colors
+        /// 也可以是
+        /// #000000
+        /// 这样的字符
+        /// </summary>
         public string ClassColor;  //表示该课程的背景颜色
+
 
         public OneClass()
         {
