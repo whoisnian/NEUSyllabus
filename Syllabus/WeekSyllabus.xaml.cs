@@ -34,17 +34,18 @@ namespace Syllabus
             this.Thursday = new OneDay();
             this.Friday = new OneDay();
             this.Saturday = new OneDay();
-            
+            this.MyColor = "#32FF74";
 
+
+            //Week选择
             List<ViewModelWeekList> WeekList = new List<ViewModelWeekList>();
             for (int count = 1; count < 54; count++)
             {
                 WeekList.Add(new ViewModelWeekList { Week = count.ToString()});
             }
-
             ChooseWeek.ItemsSource = WeekList;
 
-            this.MyColor = "#32FF74";
+            
 
 
         }
@@ -107,6 +108,7 @@ namespace Syllabus
             {
                 //应该存到数据库里去；
                 this.Sunday.Oneday[0].ClassNote = NoteBox.Text;
+                Bindings.Update();
             }
         }
 

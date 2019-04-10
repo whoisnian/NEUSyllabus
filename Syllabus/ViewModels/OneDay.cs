@@ -15,12 +15,13 @@ namespace Syllabus.ViewModels
         public string ClassName;
         public string ClassSite;
         public string ClassNote;
+        public string ClassColor;  //表示该课程的背景颜色
 
         public OneClass()
         {
             this.ClassName = "";
             this.ClassSite = "";
-            this.ClassNote = "...";
+            this.ClassNote = "";
         }
 
         public OneClass(string newClassName, string newClassSite, string newClassNote)
