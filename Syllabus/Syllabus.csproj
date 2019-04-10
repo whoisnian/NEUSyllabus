@@ -128,6 +128,7 @@
     <Compile Include="Models\DataContext.cs" />
     <Compile Include="Models\DbCourse.cs" />
     <Compile Include="Models\DbLocTime.cs" />
+    <Compile Include="Models\DbNote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DatabaseService.cs" />
     <Compile Include="Services\GetCoursesService.cs" />

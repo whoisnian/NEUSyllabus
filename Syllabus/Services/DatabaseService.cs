@@ -144,5 +144,45 @@ namespace Syllabus.Services
             }
             Database.SaveChanges();
         }
+
+        /// <summary>
+        /// 获取所有便签
+        /// </summary>
+        /// <returns>DbNote的List列表</returns>
+        public List<DbNote> GetAllNotes()
+        {
+            List<DbNote> dbNotes = new List<DbNote>();
+
+            // 从本地数据库获取数据
+            var Database = new DataContext();
+            dbNotes = Database.DbNotes
+                .ToList<DbNote>();
+
+            return dbNotes;
+        }
+
+        /// <summary>
+        /// 向数据库中添加一个新便签
+        /// </summary>
+        /// <param name="Content">便签内容</param>
+        /// <param name="Week">第几周</param>
+        /// <param name="WeekDay">周几</param>
+        /// <param name="Time">第几节课</param>
+        public void AddNote(String content, int week, int weekDay, int time)
+        {
+            // 从本地数据库获取数据
+            var Database = new DataContext();
+
+            DbNote TempDbNote = new DbNote()
+            {
+                Content = content,
+                Week = week,
+                WeekDay = weekDay,
+                Time = time
+            };
+
+            Database.DbNotes.Add(TempDbNote);
+            Database.SaveChanges();
+        }
     }
 }
