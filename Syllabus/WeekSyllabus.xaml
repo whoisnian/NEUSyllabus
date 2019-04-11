@@ -158,11 +158,11 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="{x:Bind Sunday.Oneday[0].ClassColor}">
-                <TextBlock Text="{x:Bind Sunday.Oneday[0].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[6].Oneday[0].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[0].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Sunday.Oneday[0].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[0].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
                 <StackPanel Margin="0,5,0,0"
@@ -186,21 +186,21 @@
                             </Flyout>
                         </Button.Flyout>
                     </Button>
-                    <TextBlock Text="{x:Bind Sunday.Oneday[0].ClassNote}"
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[0].Notes}"
                                TextWrapping="Wrap"/>
                 </StackPanel>
             </StackPanel>
 
 
             <StackPanel Grid.Row="3"
-                        Background="{x:Bind Sunday.Oneday[1].ClassColor}">
-                <TextBlock Text="{x:Bind Sunday.Oneday[1].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[6].Oneday[1].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[1].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Sunday.Oneday[1].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[1].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Sunday.Oneday[1].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[1].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
 
@@ -208,53 +208,53 @@
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="{x:Bind Sunday.Oneday[2].ClassColor}">
-                <TextBlock Text="{x:Bind Sunday.Oneday[2].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[6].Oneday[2].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[2].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Sunday.Oneday[2].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[2].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Sunday.Oneday[2].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[2].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="{x:Bind Sunday.Oneday[3].ClassColor}">
-                <TextBlock Text="{x:Bind Sunday.Oneday[3].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[6].Oneday[3].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[3].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Sunday.Oneday[3].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[3].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Sunday.Oneday[3].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[3].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="{x:Bind Sunday.Oneday[4].ClassColor}">
-                <TextBlock Text="{x:Bind Sunday.Oneday[4].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[6].Oneday[4].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Sunday.Oneday[4].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Sunday.Oneday[4].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="{x:Bind Sunday.Oneday[5].ClassColor}">
-                <TextBlock Text="{x:Bind Sunday.Oneday[5].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[6].Oneday[5].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[5].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Sunday.Oneday[4].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Sunday.Oneday[4].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
@@ -284,79 +284,79 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="{x:Bind Monday.Oneday[0].ClassColor}">
-                <TextBlock Text="{x:Bind Monday.Oneday[0].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[0].Oneday[0].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[0].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Monday.Oneday[0].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[0].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Monday.Oneday[0].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[0].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
-                        Background="{x:Bind Monday.Oneday[1].ClassColor}">
-                <TextBlock Text="{x:Bind Monday.Oneday[1].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[0].Oneday[1].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[1].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Monday.Oneday[1].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[1].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Monday.Oneday[1].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[1].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="{x:Bind Monday.Oneday[2].ClassColor}">
-                <TextBlock Text="{x:Bind Monday.Oneday[2].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[0].Oneday[2].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[2].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Monday.Oneday[2].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[2].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Monday.Oneday[2].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[2].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="{x:Bind Monday.Oneday[3].ClassColor}">
-                <TextBlock Text="{x:Bind Monday.Oneday[3].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[0].Oneday[3].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[3].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Monday.Oneday[3].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[3].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Monday.Oneday[3].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[3].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="{x:Bind Monday.Oneday[4].ClassColor}">
-                <TextBlock Text="{x:Bind Monday.Oneday[4].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[0].Oneday[4].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[4].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Monday.Oneday[4].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[4].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Monday.Oneday[4].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[4].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="{x:Bind Monday.Oneday[5].ClassColor}">
-                <TextBlock Text="{x:Bind Monday.Oneday[5].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[0].Oneday[5].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[5].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Monday.Oneday[5].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[5].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Monday.Oneday[5].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[5].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
@@ -386,79 +386,79 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="{x:Bind Tuesday.Oneday[0].ClassColor}">
-                <TextBlock Text="{x:Bind Tuesday.Oneday[0].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[1].Oneday[0].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[0].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Tuesday.Oneday[0].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[0].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Tuesday.Oneday[0].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[0].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
-                        Background="{x:Bind Tuesday.Oneday[1].ClassColor}">
-                <TextBlock Text="{x:Bind Tuesday.Oneday[1].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[1].Oneday[1].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[1].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Tuesday.Oneday[1].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[1].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Tuesday.Oneday[1].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[1].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="{x:Bind Tuesday.Oneday[2].ClassColor}">
-                <TextBlock Text="{x:Bind Tuesday.Oneday[2].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[1].Oneday[2].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[2].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Tuesday.Oneday[2].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[2].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Tuesday.Oneday[2].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[2].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="{x:Bind Tuesday.Oneday[3].ClassColor}">
-                <TextBlock Text="{x:Bind Tuesday.Oneday[3].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[1].Oneday[3].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[3].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Tuesday.Oneday[3].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[3].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Tuesday.Oneday[3].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[3].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="{x:Bind Tuesday.Oneday[4].ClassColor}">
-                <TextBlock Text="{x:Bind Tuesday.Oneday[4].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[1].Oneday[4].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[4].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Tuesday.Oneday[4].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[4].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Tuesday.Oneday[4].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[4].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="{x:Bind Tuesday.Oneday[5].ClassColor}">
-                <TextBlock Text="{x:Bind Tuesday.Oneday[5].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[1].Oneday[5].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[5].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Tuesday.Oneday[5].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[5].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Tuesday.Oneday[5].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[5].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
@@ -488,79 +488,79 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="{x:Bind Wednesday.Oneday[0].ClassColor}">
-                <TextBlock Text="{x:Bind Wednesday.Oneday[0].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[2].Oneday[0].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[0].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Wednesday.Oneday[0].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[0].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Wednesday.Oneday[0].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[0].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
-                        Background="{x:Bind Wednesday.Oneday[1].ClassColor}">
-                <TextBlock Text="{x:Bind Wednesday.Oneday[1].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[2].Oneday[1].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[1].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Wednesday.Oneday[1].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[1].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Wednesday.Oneday[1].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[1].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="{x:Bind Wednesday.Oneday[2].ClassColor}">
-                <TextBlock Text="{x:Bind Wednesday.Oneday[2].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[2].Oneday[2].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[2].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Wednesday.Oneday[2].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[2].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Wednesday.Oneday[2].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[2].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="{x:Bind Wednesday.Oneday[3].ClassColor}">
-                <TextBlock Text="{x:Bind Wednesday.Oneday[3].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[2].Oneday[3].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[3].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Wednesday.Oneday[3].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[3].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Wednesday.Oneday[3].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[3].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="{x:Bind Wednesday.Oneday[4].ClassColor}">
-                <TextBlock Text="{x:Bind Wednesday.Oneday[4].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[2].Oneday[4].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[4].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Wednesday.Oneday[4].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[4].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Wednesday.Oneday[4].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[4].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="{x:Bind Wednesday.Oneday[5].ClassColor}">
-                <TextBlock Text="{x:Bind Wednesday.Oneday[5].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[2].Oneday[5].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[5].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Wednesday.Oneday[5].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[5].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Wednesday.Oneday[5].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[5].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
@@ -590,79 +590,79 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="{x:Bind Thursday.Oneday[0].ClassColor}">
-                <TextBlock Text="{x:Bind Thursday.Oneday[0].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[3].Oneday[0].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[0].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Thursday.Oneday[0].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[0].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Thursday.Oneday[0].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[0].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
-                        Background="{x:Bind Thursday.Oneday[1].ClassColor}">
-                <TextBlock Text="{x:Bind Thursday.Oneday[1].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[3].Oneday[1].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[1].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Thursday.Oneday[1].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[1].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Thursday.Oneday[1].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[1].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="{x:Bind Thursday.Oneday[2].ClassColor}">
-                <TextBlock Text="{x:Bind Thursday.Oneday[2].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[3].Oneday[2].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[2].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Thursday.Oneday[2].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[2].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Thursday.Oneday[2].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[2].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="{x:Bind Thursday.Oneday[3].ClassColor}">
-                <TextBlock Text="{x:Bind Thursday.Oneday[3].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[3].Oneday[3].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[3].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Thursday.Oneday[3].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[3].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Thursday.Oneday[3].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[3].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="{x:Bind Thursday.Oneday[4].ClassColor}">
-                <TextBlock Text="{x:Bind Thursday.Oneday[4].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[3].Oneday[4].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[4].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Thursday.Oneday[4].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[4].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Thursday.Oneday[4].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[4].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="{x:Bind Thursday.Oneday[5].ClassColor}">
-                <TextBlock Text="{x:Bind Thursday.Oneday[5].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[3].Oneday[5].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[5].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Thursday.Oneday[5].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[5].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Thursday.Oneday[5].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[5].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
@@ -692,79 +692,79 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="{x:Bind Friday.Oneday[0].ClassColor}">
-                <TextBlock Text="{x:Bind Friday.Oneday[0].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[4].Oneday[0].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[0].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Friday.Oneday[0].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[0].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Friday.Oneday[0].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[0].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
-                        Background="{x:Bind Friday.Oneday[1].ClassColor}">
-                <TextBlock Text="{x:Bind Friday.Oneday[1].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[4].Oneday[1].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[1].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Friday.Oneday[1].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[1].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Friday.Oneday[1].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[1].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="{x:Bind Friday.Oneday[2].ClassColor}">
-                <TextBlock Text="{x:Bind Friday.Oneday[2].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[4].Oneday[2].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[2].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Friday.Oneday[2].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[2].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Friday.Oneday[2].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[2].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="{x:Bind Friday.Oneday[3].ClassColor}">
-                <TextBlock Text="{x:Bind Friday.Oneday[3].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[4].Oneday[3].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[3].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Friday.Oneday[3].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[3].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Friday.Oneday[3].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[3].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="{x:Bind Friday.Oneday[4].ClassColor}">
-                <TextBlock Text="{x:Bind Friday.Oneday[4].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[4].Oneday[4].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[4].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Friday.Oneday[4].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[4].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Friday.Oneday[4].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[4].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="{x:Bind Friday.Oneday[5].ClassColor}">
-                <TextBlock Text="{x:Bind Friday.Oneday[5].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[4].Oneday[5].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[5].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Friday.Oneday[5].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[5].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Friday.Oneday[5].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[5].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
@@ -794,79 +794,79 @@
                        FontSize="20"/>
 
             <StackPanel Grid.Row="2"
-                        Background="{x:Bind Saturday.Oneday[0].ClassColor}">
-                <TextBlock Text="{x:Bind Saturday.Oneday[0].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[5].Oneday[0].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[0].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Saturday.Oneday[0].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[0].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Saturday.Oneday[0].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[0].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3"
-                        Background="{x:Bind Saturday.Oneday[1].ClassColor}">
-                <TextBlock Text="{x:Bind Saturday.Oneday[1].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[5].Oneday[1].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[1].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Saturday.Oneday[1].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[1].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Saturday.Oneday[1].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[1].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="4"
-                        Background="{x:Bind Saturday.Oneday[2].ClassColor}">
-                <TextBlock Text="{x:Bind Saturday.Oneday[2].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[5].Oneday[2].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[2].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Saturday.Oneday[2].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[2].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Saturday.Oneday[2].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[2].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="5"
-                        Background="{x:Bind Saturday.Oneday[3].ClassColor}">
-                <TextBlock Text="{x:Bind Saturday.Oneday[3].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[5].Oneday[3].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[3].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Saturday.Oneday[3].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[3].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Saturday.Oneday[3].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[3].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="6"
-                        Background="{x:Bind Saturday.Oneday[4].ClassColor}">
-                <TextBlock Text="{x:Bind Saturday.Oneday[4].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[5].Oneday[4].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[4].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Saturday.Oneday[4].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[4].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Saturday.Oneday[4].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[4].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>
 
             <StackPanel Grid.Row="7"
-                        Background="{x:Bind Saturday.Oneday[5].ClassColor}">
-                <TextBlock Text="{x:Bind Saturday.Oneday[5].ClassName}"
+                        Background="{x:Bind ViewModel.Oneweek[5].Oneday[5].Color}">
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[5].Name}"
                            TextWrapping="Wrap"
                            Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind Saturday.Oneday[5].ClassSite}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[5].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind Saturday.Oneday[5].ClassNote}"
+                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[5].Notes}"
                            TextWrapping="Wrap"
                            Margin="0,5,0,0"/>
             </StackPanel>

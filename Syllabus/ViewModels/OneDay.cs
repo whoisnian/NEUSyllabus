@@ -77,7 +77,15 @@ namespace Syllabus.ViewModels
     /// </summary>
     public class OneDay
     {
-        public OneClass[] Oneday = new[] { new OneClass(), new OneClass(), new OneClass(), new OneClass(), new OneClass(), new OneClass()};
+        public Course[] Oneday = new[] { new Course(), new Course(), new Course(), new Course(), new Course(), new Course() };//改为使用Course以方便数据读取
 
+        internal void AddEmptyLocTime()
+        {
+            foreach (var onecourse in Oneday)
+            {
+                if(onecourse.LocTimes.Count==0)
+                    onecourse.LocTimes.Add(new LocTime());
+            }
+        }
     }
 }

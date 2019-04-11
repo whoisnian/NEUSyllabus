@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Syllabus.ViewModels
 {
@@ -32,7 +34,7 @@ namespace Syllabus.ViewModels
 
         public void SolveWeek(IList<object> list)
         {
-            Week = "";
+            Week = "0";
             for (int i = 0; i < 20; ++i)
             {
                 if (list.Contains(i + 1))
@@ -48,7 +50,9 @@ namespace Syllabus.ViewModels
 
         public LocTime()
         {
-            Week = "00000000000000000000";
+            Week = "000000000000000000000000000000000000000000000000000000000000";
+            Location = "";
+
         }
 
         public LocTime(String InputLocation, String InputWeek, int InputWeekDay, int InputBeginTime, int InputEndTime, int InputTag)
@@ -74,7 +78,7 @@ namespace Syllabus.ViewModels
                     {
                         WeekForShow += ", ";
                     }
-                    WeekForShow += (i + 1).ToString();
+                    WeekForShow += i.ToString();
                     preidx = i;
                 }
 
@@ -82,7 +86,7 @@ namespace Syllabus.ViewModels
                 {
                     if (preidx != i - 1)
                     {
-                        WeekForShow += "-" + i.ToString();
+                        WeekForShow += "-" + (i-1).ToString();
                     }
                 }
                 pre = Week[i];
@@ -93,5 +97,7 @@ namespace Syllabus.ViewModels
             TimeForShow = ToHanzi(WeekDay) + " " + BeginTime + "-" + EndTime + "节";
             Tag = InputTag;
         }
+
+        
     }
 }

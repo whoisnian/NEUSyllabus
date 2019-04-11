@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using GalaSoft.MvvmLight.Ioc;
+using Syllabus.Services;
 
 // https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
 
@@ -24,23 +26,35 @@ namespace Syllabus
     /// </summary>
     public sealed partial class WeekSyllabus : Page
     {
+        private OneWeek ViewModel { get; set; }
+        private Courses DataModel;
         public WeekSyllabus()
         {
             this.InitializeComponent();
-            this.Sunday = new OneDay();
-            this.Monday = new OneDay();
-            this.Tuesday = new OneDay();
-            this.Wednesday = new OneDay();
-            this.Thursday = new OneDay();
-            this.Friday = new OneDay();
-            this.Saturday = new OneDay();
+            ViewModel = SimpleIoc.Default.GetInstance<OneWeek>();
+            DataModel = SimpleIoc.Default.GetInstance<DatabaseService>().GetAllCourses();
+            foreach (var onecourse in DataModel.CourseCollection)//显示第一周课程
+            {
+                foreach (var oneloctime in onecourse.LocTimes)
+                {
+                    if (oneloctime.Week[1] == '1')
+                    {
+                        for (int k = oneloctime.BeginTime / 2; k < oneloctime.EndTime / 2; k++)
+                        {
+                            ViewModel.Oneweek[oneloctime.WeekDay - 1].Oneday[k] = onecourse.DeepCopy();
+                            ViewModel.Oneweek[oneloctime.WeekDay - 1].Oneday[k].ClearLocTime();
+                            ViewModel.Oneweek[oneloctime.WeekDay - 1].Oneday[k].AddLocTime(oneloctime);
+                        }
+                    }
+                }
+            }
 
-
+            ViewModel.AddEmptyLocTime();
             //Week选择
             List<ViewModelWeekList> WeekList = new List<ViewModelWeekList>();
             for (int count = 1; count < 54; count++)
             {
-                WeekList.Add(new ViewModelWeekList { Week = count.ToString()});
+                WeekList.Add(new ViewModelWeekList { Week = count.ToString() });
             }
             ChooseWeek.ItemsSource = WeekList;
 
@@ -50,47 +64,7 @@ namespace Syllabus
         }
         
 
-        public OneDay Sunday
-        {
-            get;
-            set;
-        }
-
-        public OneDay Monday
-        {
-            get;
-            set;
-        }
-
-        public OneDay Tuesday
-        {
-            get;
-            set;
-        }
-
-        public OneDay Wednesday
-        {
-            get;
-            set;
-        }
-
-        public OneDay Thursday
-        {
-            get;
-            set;
-        }
-
-        public OneDay Friday
-        {
-            get;
-            set;
-        }
-
-        public OneDay Saturday
-        {
-            get;
-            set;
-        }
+        
 
         public int WhichWeek;
         public string MyColor;
@@ -103,14 +77,14 @@ namespace Syllabus
 
         private void EnterNote_Click(object sender, RoutedEventArgs e)
         {
-            //if (NoteBox.Text != "")
-            //{
-            //    //应该存到数据库里去；
-            //   //目前只是把它显示了出来；但是切换页面后就没有了；
-            //    this.Sunday.Oneday[0].ClassNote = NoteBox.Text;
+            if (NoteBox.Text != "")
+            {
+                //应该存到数据库里去；
+               //目前只是把它显示了出来；但是切换页面后就没有了；
+                //this.Sunday.Oneday[0].ClassNote = NoteBox.Text;
                 
-            //    Bindings.Update();  //在Note的Layout上写完数据后要通过这句话刷新一下才可以；
-            //}
+                Bindings.Update();  //在Note的Layout上写完数据后要通过这句话刷新一下才可以；
+            }
         }
 
 
@@ -122,6 +96,26 @@ namespace Syllabus
                 //可以得到被选择的数据；
                 ViewModelWeekList SelectedWeek = ChooseWeek.SelectedItem as ViewModelWeekList;
                 Text.Text = SelectedWeek.Week;
+                int newweek;
+                int.TryParse(SelectedWeek.Week, out newweek);
+                ViewModel.Clear();
+                foreach (var onecourse in DataModel.CourseCollection)//显示第一周课程
+                {
+                    foreach (var oneloctime in onecourse.LocTimes)
+                    {
+                        if (oneloctime.Week[newweek] == '1')
+                        {
+                            for (int k = oneloctime.BeginTime / 2; k < oneloctime.EndTime / 2; k++)
+                            {
+                                ViewModel.Oneweek[oneloctime.WeekDay - 1].Oneday[k] = onecourse.DeepCopy();
+                                ViewModel.Oneweek[oneloctime.WeekDay - 1].Oneday[k].ClearLocTime();
+                                ViewModel.Oneweek[oneloctime.WeekDay - 1].Oneday[k].AddLocTime(oneloctime);
+                            }
+                        }
+                    }
+                }
+                ViewModel.AddEmptyLocTime();
+                Bindings.Update();
             }
         }
 

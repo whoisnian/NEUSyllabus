@@ -13,5 +13,6 @@ namespace Syllabus.ViewModels
     public class ViewModelWeekList
     {
         public string Week { get; set; }
+
     }
 }

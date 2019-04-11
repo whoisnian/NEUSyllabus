@@ -142,6 +142,7 @@
     <Compile Include="ViewModels\Courses.cs" />
     <Compile Include="ViewModels\LocTime.cs" />
     <Compile Include="ViewModels\OneDay.cs" />
+    <Compile Include="ViewModels\OneWeek.cs" />
     <Compile Include="ViewModels\ViewModelWeekList.cs" />
     <Compile Include="WeekSyllabus.xaml.cs">
       <DependentUpon>WeekSyllabus.xaml</DependentUpon>

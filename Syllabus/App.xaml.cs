@@ -91,6 +91,7 @@ namespace Syllabus
             SimpleIoc.Default.Register<GetCoursesService>();
             SimpleIoc.Default.Register<DatabaseService>();
             SimpleIoc.Default.Register<Courses>();
+            SimpleIoc.Default.Register<OneWeek>();
             SimpleIoc.Default.Register<LocTime>(() => new LocTime());
         }
 
