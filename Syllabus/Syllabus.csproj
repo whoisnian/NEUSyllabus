@@ -129,9 +129,6 @@
     <Compile Include="Models\DbCourse.cs" />
     <Compile Include="Models\DbLocTime.cs" />
     <Compile Include="Models\DbNote.cs" />
-    <Compile Include="NoteAddControl.xaml.cs">
-      <DependentUpon>NoteAddControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DatabaseService.cs" />
     <Compile Include="Services\GetCoursesService.cs" />
@@ -176,10 +173,6 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="NoteAddControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SettingPage.xaml">
       <SubType>Designer</SubType>

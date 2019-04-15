@@ -165,6 +165,7 @@
                 <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[0].LocTimes[0].Location}"
                            TextWrapping="Wrap"
                            Margin="0,2,0,0"/>
+
                 <StackPanel Margin="0,5,0,0"
                             Orientation="Horizontal">
                     <Button Content="+"
@@ -176,12 +177,13 @@
                                 <StackPanel Orientation="Vertical">
                                     <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
                                                Text="请填写小便签" />
-                                    <TextBox Name="NoteBox"
+                                    <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
                                              VerticalAlignment="Center"
                                              PlaceholderText="Get Note"/>
                                     <Button Content="添加"
                                             Name="EnterNote"
-                                            Click="EnterNote_Click"/>
+                                            Click="EnterNote_Click"
+                                            Tag="BH60"/>
                                 </StackPanel>
                             </Flyout>
                         </Button.Flyout>

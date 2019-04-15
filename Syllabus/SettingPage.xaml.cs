@@ -75,6 +75,7 @@ namespace Syllabus
                 if (!ViewModel.Contains(CourseNameBox.Text))//没有用？？
                 {
                     ViewModel.Add(CourseNameBox.Text, TeacherNameBox.Text);
+                    //把东西写入数据库；
                     SimpleIoc.Default.GetInstance<DatabaseService>().AddCourse(new Course(CourseNameBox.Text, TeacherNameBox.Text));
                 }
                 else
