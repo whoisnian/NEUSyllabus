@@ -27,15 +27,17 @@ namespace Syllabus.Services
                 .ToList<DbCourse>();
             foreach(DbCourse TempDbCourse in TempDbCourses)
             {
-                System.Diagnostics.Debug.WriteLine("Course: " + TempDbCourse.Name);
-                AllCourses.Add(TempDbCourse.Name, TempDbCourse.Teacher);
+                Course TempCourse = new Course();
+                TempCourse.Name = TempDbCourse.Name;
+                TempCourse.Teacher = TempDbCourse.Teacher;
+                TempCourse.Notes = TempDbCourse.Notes;
+                AllCourses.Add(TempCourse);
                 if(TempDbCourse.DbLocTimes == null)
                 {
                     continue;
                 }
                 foreach(DbLocTime TempDbLocTime in TempDbCourse.DbLocTimes)
                 {
-                    System.Diagnostics.Debug.WriteLine("    Time: " + TempDbLocTime.Week);
                     LocTime TempLocTime = new LocTime(
                         TempDbLocTime.Location,
                         TempDbLocTime.Week,
@@ -75,6 +77,7 @@ namespace Syllabus.Services
                 DbCourse TempDbCourse = new DbCourse();
                 TempDbCourse.Name = TempCourse.Name;
                 TempDbCourse.Teacher = TempCourse.Teacher;
+                TempDbCourse.Notes = TempCourse.Notes;
                 TempDbCourse.DbLocTimes = new List<DbLocTime>();
                 foreach (LocTime TempLocTime in TempCourse.LocTimes)
                 {
@@ -102,13 +105,14 @@ namespace Syllabus.Services
             var Database = new DataContext();
             var TempDbCourseRes = Database.DbCourses
                 .Include(DbCourse => DbCourse.DbLocTimes)
-                .SingleOrDefault(a => a.Name == TempCourse.Name);
+                .SingleOrDefault(a => a.Name.Equals(TempCourse.Name));
             if(TempDbCourseRes == null)
             {
                 // 新建课程
                 DbCourse TempDbCourse = new DbCourse();
                 TempDbCourse.Name = TempCourse.Name;
                 TempDbCourse.Teacher = TempCourse.Teacher;
+                TempDbCourse.Notes = TempCourse.Notes;
                 TempDbCourse.DbLocTimes = new List<DbLocTime>();
                 foreach (LocTime TempLocTime in TempCourse.LocTimes)
                 {
@@ -146,42 +150,93 @@ namespace Syllabus.Services
         }
 
         /// <summary>
-        /// 获取所有便签
+        /// 从数据库中删除课程（自动删除所有关联时间）
         /// </summary>
-        /// <returns>DbNote的List列表</returns>
-        public List<DbNote> GetAllNotes()
+        /// <param name="CourseName">要删除的课程名称</param>
+        public void DelCourse(String CourseName)
         {
-            List<DbNote> dbNotes = new List<DbNote>();
-
             // 从本地数据库获取数据
             var Database = new DataContext();
-            dbNotes = Database.DbNotes
-                .ToList<DbNote>();
+            var TempDbCourseRes = Database.DbCourses
+                .Include(DbCourse => DbCourse.DbLocTimes)
+                .SingleOrDefault(a => a.Name.Equals(CourseName));
+            if (TempDbCourseRes != null)
+            {
+                Database.Remove(TempDbCourseRes);
+            }
+            Database.SaveChanges();
+        }
 
-            return dbNotes;
+        /// <summary>
+        /// 从数据库中删除课程某个时间
+        /// </summary>
+        /// <param name="CourseName">要删除时间课程的名称</param>
+        /// <param name="InputLocation">>要删除时间的教室</param>
+        /// <param name="InputWeek">>要删除时间的周</param>
+        /// <param name="InputWeekDay">要删除时间的周几</param>
+        /// <param name="InputBeginTime">要删除时间的上课时间</param>
+        /// <param name="InputEndTime">要删除时间的下课时间</param>
+        public void DelLocTime(String CourseName, String InputLocation, String InputWeek, int InputWeekDay, int InputBeginTime, int InputEndTime)
+        {
+            // 从本地数据库获取数据
+            var Database = new DataContext();
+            var TempDbCourseRes = Database.DbCourses
+                .Include(DbCourse => DbCourse.DbLocTimes)
+                .SingleOrDefault(a => a.Name.Equals(CourseName));
+            if (TempDbCourseRes != null)
+            {
+                if(TempDbCourseRes.DbLocTimes != null)
+                {
+                    foreach (DbLocTime TempDbLocTime in TempDbCourseRes.DbLocTimes)
+                    {
+                        if(TempDbLocTime.Location.Equals(InputLocation)
+                            &&TempDbLocTime.Week.Equals(InputWeek)
+                            &&TempDbLocTime.WeekDay.Equals(InputWeekDay)
+                            && TempDbLocTime.BeginTime.Equals(InputBeginTime)
+                            &&TempDbLocTime.EndTime.Equals(InputEndTime))
+                        {
+                            TempDbCourseRes.DbLocTimes.Remove(TempDbLocTime);
+                        }
+                    }
+                }
+            }
+            Database.SaveChanges();
         }
 
         /// <summary>
         /// 向数据库中添加一个新便签
         /// </summary>
+        /// <param name="courseName">课程名称</param>
         /// <param name="Content">便签内容</param>
-        /// <param name="Week">第几周</param>
-        /// <param name="WeekDay">周几</param>
-        /// <param name="Time">第几节课</param>
-        public void AddNote(String content, int week, int weekDay, int time)
+        public void AddNote(String courseName, String content)
         {
             // 从本地数据库获取数据
             var Database = new DataContext();
 
-            DbNote TempDbNote = new DbNote()
+            var TempDbCourseRes = Database.DbCourses
+                .SingleOrDefault(a => a.Name.Equals(courseName));
+            if (TempDbCourseRes != null)
             {
-                Content = content,
-                Week = week,
-                WeekDay = weekDay,
-                Time = time
-            };
+                TempDbCourseRes.Notes = content;
+            }
+            Database.SaveChanges();
+        }
 
-            Database.DbNotes.Add(TempDbNote);
+        /// <summary>
+        /// 删除数据库中某课程的便签
+        /// </summary>
+        /// <param name="courseName">课程名称</param>
+        public void DelNote(String courseName)
+        {
+            // 从本地数据库获取数据
+            var Database = new DataContext();
+
+            var TempDbCourseRes = Database.DbCourses
+                .SingleOrDefault(a => a.Name.Equals(courseName));
+            if (TempDbCourseRes != null)
+            {
+                TempDbCourseRes.Notes = "";
+            }
             Database.SaveChanges();
         }
     }

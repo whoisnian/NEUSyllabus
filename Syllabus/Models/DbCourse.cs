@@ -21,6 +21,11 @@ namespace Syllabus.Models
         public String Teacher { get; set; }
 
         /// <summary>
+        /// 课程对应便签
+        /// </summary>
+        public String Notes { get; set; }
+
+        /// <summary>
         /// 上课地点时间安排
         /// </summary>
         public List<DbLocTime> DbLocTimes { get; set; }

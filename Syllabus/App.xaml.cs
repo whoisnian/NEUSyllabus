@@ -80,7 +80,7 @@ namespace Syllabus
             using (var db = new DataContext())
             {
                 // 清空数据库
-                 //db.Database.EnsureDeleted();
+                // db.Database.EnsureDeleted();
 
                 // 创建数据库
                 // https://docs.microsoft.com/en-us/ef/core/managing-schemas/ensure-created
