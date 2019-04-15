@@ -62,75 +62,75 @@
             <TextBlock Grid.Row="2"
                    HorizontalAlignment="Center"
                    Margin="0,30,0,0"
-                   Text="第 一 节"
+                   Text="一"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="2"
                    HorizontalAlignment="Center" 
                    Margin="0,80,0,0"
-                   Text="第 二 节"
+                   Text="二"
                    FontSize="20"/>
 
 
             <TextBlock Grid.Row="3"
                    HorizontalAlignment="Center"
                    Margin="0,30,0,0"
-                   Text="第 三 节"
+                   Text="三"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="3"
                    HorizontalAlignment="Center" 
                    Margin="0,80,0,0"
-                   Text="第 四 节"
+                   Text="四"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="4"
                    HorizontalAlignment="Center"
                    Margin="0,30,0,0"
-                   Text="第 五 节"
+                   Text="五"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="4"
                    HorizontalAlignment="Center" 
                    Margin="0,80,0,0"
-                   Text="第 六 节"
+                   Text="六"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="5"
                    HorizontalAlignment="Center"
                    Margin="0,30,0,0"
-                   Text="第 七 节"
+                   Text="七"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="5"
                    HorizontalAlignment="Center" 
                    Margin="0,80,0,0"
-                   Text="第 八 节"
+                   Text="八"
                    FontSize="20"/>
 
 
             <TextBlock Grid.Row="6"
                    HorizontalAlignment="Center"
                    Margin="0,30,0,0"
-                   Text="第 九 节"
+                   Text="九"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="6"
                    HorizontalAlignment="Center" 
                    Margin="0,80,0,0"
-                   Text="第 十 节"
+                   Text="十"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="7"
                    HorizontalAlignment="Center"
                    Margin="0,30,0,0"
-                   Text="第十一节"
+                   Text="十一"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="7"
                    HorizontalAlignment="Center" 
                    Margin="0,80,0,0"
-                   Text="第十二节"
+                   Text="十二"
                    FontSize="20"/>
 
         </Grid>
@@ -157,109 +157,203 @@
                        Text="周日"
                        FontSize="20"/>
 
-            <StackPanel Grid.Row="2"
-                        Background="{x:Bind ViewModel.Oneweek[6].Oneday[0].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[0].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[0].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-
-                <StackPanel Margin="0,5,0,0"
-                            Orientation="Horizontal">
-                    <Button Content="+"
-                            Click="Button_Click"
-                            FontWeight="Black"
-                            FontSize="10">
-                        <Button.Flyout>
-                            <Flyout>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
-                                               Text="请填写小便签" />
-                                    <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
-                                             VerticalAlignment="Center"
-                                             PlaceholderText="Get Note"/>
-                                    <Button Content="添加"
-                                            Name="EnterNote"
-                                            Click="EnterNote_Click"
-                                            Tag="BH60"/>
-                                </StackPanel>
-                            </Flyout>
-                        </Button.Flyout>
-                    </Button>
+            <Button Grid.Row="2"
+                    Background="{x:Bind ViewModel.Oneweek[6].Oneday[0].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="60"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[0].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[0].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[0].Notes}"
-                               TextWrapping="Wrap"/>
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
                 </StackPanel>
-            </StackPanel>
 
+            </Button>
 
-            <StackPanel Grid.Row="3"
-                        Background="{x:Bind ViewModel.Oneweek[6].Oneday[1].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[1].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[1].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[1].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
+            <Button Grid.Row="3"
+                    Background="{x:Bind ViewModel.Oneweek[6].Oneday[1].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="61"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[1].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[1].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[1].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
+            </Button>
 
-            </StackPanel>
+            <Button Grid.Row="4"
+                    Background="{x:Bind ViewModel.Oneweek[6].Oneday[2].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="62"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[2].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[2].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[2].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="4"
-                        Background="{x:Bind ViewModel.Oneweek[6].Oneday[2].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[2].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[2].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[2].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="5"
-                        Background="{x:Bind ViewModel.Oneweek[6].Oneday[3].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[3].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[3].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[3].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="5"
+                    Background="{x:Bind ViewModel.Oneweek[6].Oneday[3].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="63"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[3].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[3].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[3].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="6"
-                        Background="{x:Bind ViewModel.Oneweek[6].Oneday[4].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="7"
-                        Background="{x:Bind ViewModel.Oneweek[6].Oneday[5].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[5].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="6"
+                    Background="{x:Bind ViewModel.Oneweek[6].Oneday[4].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="64"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="{x:Bind ViewModel.Oneweek[6].Oneday[5].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="65"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[5].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[5].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[5].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
 
         </Grid>
 
@@ -285,83 +379,203 @@
                        Text="周一"
                        FontSize="20"/>
 
-            <StackPanel Grid.Row="2"
-                        Background="{x:Bind ViewModel.Oneweek[0].Oneday[0].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[0].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[0].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[0].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="2"
+                    Background="{x:Bind ViewModel.Oneweek[0].Oneday[0].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="00"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[0].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[0].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[0].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="3"
-                        Background="{x:Bind ViewModel.Oneweek[0].Oneday[1].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[1].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[1].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[1].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="4"
-                        Background="{x:Bind ViewModel.Oneweek[0].Oneday[2].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[2].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[2].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[2].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="3"
+                    Background="{x:Bind ViewModel.Oneweek[0].Oneday[1].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="01"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[1].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[1].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[1].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="5"
-                        Background="{x:Bind ViewModel.Oneweek[0].Oneday[3].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[3].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[3].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[3].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="6"
-                        Background="{x:Bind ViewModel.Oneweek[0].Oneday[4].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[4].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[4].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[4].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="4"
+                    Background="{x:Bind ViewModel.Oneweek[0].Oneday[2].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="02"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[2].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[2].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[2].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="7"
-                        Background="{x:Bind ViewModel.Oneweek[0].Oneday[5].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[5].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[5].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[5].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Background="{x:Bind ViewModel.Oneweek[0].Oneday[3].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="03"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[3].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[3].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[3].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="6"
+                    Background="{x:Bind ViewModel.Oneweek[0].Oneday[4].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="04"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[4].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[4].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[4].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="{x:Bind ViewModel.Oneweek[0].Oneday[5].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="05"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[5].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[5].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[5].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
 
         </Grid>
 
@@ -387,83 +601,203 @@
                        Text="周二"
                        FontSize="20"/>
 
-            <StackPanel Grid.Row="2"
-                        Background="{x:Bind ViewModel.Oneweek[1].Oneday[0].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[0].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[0].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[0].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="2"
+                    Background="{x:Bind ViewModel.Oneweek[1].Oneday[0].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="10"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[0].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[0].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[0].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="3"
-                        Background="{x:Bind ViewModel.Oneweek[1].Oneday[1].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[1].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[1].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[1].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="4"
-                        Background="{x:Bind ViewModel.Oneweek[1].Oneday[2].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[2].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[2].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[2].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="3"
+                    Background="{x:Bind ViewModel.Oneweek[1].Oneday[1].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="11"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[1].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[1].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[1].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="5"
-                        Background="{x:Bind ViewModel.Oneweek[1].Oneday[3].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[3].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[3].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[3].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="6"
-                        Background="{x:Bind ViewModel.Oneweek[1].Oneday[4].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[4].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[4].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[4].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="4"
+                    Background="{x:Bind ViewModel.Oneweek[1].Oneday[2].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="12"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[2].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[2].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[2].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="7"
-                        Background="{x:Bind ViewModel.Oneweek[1].Oneday[5].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[5].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[5].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[5].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Background="{x:Bind ViewModel.Oneweek[1].Oneday[3].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="13"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[3].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[3].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[3].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="6"
+                    Background="{x:Bind ViewModel.Oneweek[1].Oneday[4].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="14"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[4].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[4].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[4].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="{x:Bind ViewModel.Oneweek[1].Oneday[5].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="15"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[5].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[5].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[5].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
 
         </Grid>
 
@@ -489,83 +823,203 @@
                        Text="周三"
                        FontSize="20"/>
 
-            <StackPanel Grid.Row="2"
-                        Background="{x:Bind ViewModel.Oneweek[2].Oneday[0].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[0].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[0].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[0].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="2"
+                    Background="{x:Bind ViewModel.Oneweek[2].Oneday[0].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="20"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[0].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[0].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[0].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="3"
-                        Background="{x:Bind ViewModel.Oneweek[2].Oneday[1].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[1].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[1].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[1].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="4"
-                        Background="{x:Bind ViewModel.Oneweek[2].Oneday[2].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[2].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[2].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[2].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="3"
+                    Background="{x:Bind ViewModel.Oneweek[2].Oneday[1].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="21"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[1].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[1].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[1].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="5"
-                        Background="{x:Bind ViewModel.Oneweek[2].Oneday[3].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[3].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[3].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[3].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="6"
-                        Background="{x:Bind ViewModel.Oneweek[2].Oneday[4].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[4].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[4].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[4].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="4"
+                    Background="{x:Bind ViewModel.Oneweek[2].Oneday[2].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="22"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[2].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[2].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[2].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="7"
-                        Background="{x:Bind ViewModel.Oneweek[2].Oneday[5].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[5].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[5].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[5].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Background="{x:Bind ViewModel.Oneweek[2].Oneday[3].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="23"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[3].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[3].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[3].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="6"
+                    Background="{x:Bind ViewModel.Oneweek[2].Oneday[4].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="24"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[4].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[4].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[4].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="{x:Bind ViewModel.Oneweek[2].Oneday[5].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="25"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[5].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[5].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[5].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
 
         </Grid>
 
@@ -591,83 +1045,203 @@
                        Text="周四"
                        FontSize="20"/>
 
-            <StackPanel Grid.Row="2"
-                        Background="{x:Bind ViewModel.Oneweek[3].Oneday[0].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[0].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[0].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[0].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="2"
+                    Background="{x:Bind ViewModel.Oneweek[3].Oneday[0].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="30"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[0].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[0].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[0].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="3"
-                        Background="{x:Bind ViewModel.Oneweek[3].Oneday[1].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[1].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[1].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[1].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="4"
-                        Background="{x:Bind ViewModel.Oneweek[3].Oneday[2].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[2].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[2].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[2].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="3"
+                    Background="{x:Bind ViewModel.Oneweek[3].Oneday[1].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="31"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[1].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[1].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[1].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="5"
-                        Background="{x:Bind ViewModel.Oneweek[3].Oneday[3].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[3].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[3].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[3].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="6"
-                        Background="{x:Bind ViewModel.Oneweek[3].Oneday[4].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[4].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[4].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[4].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="4"
+                    Background="{x:Bind ViewModel.Oneweek[3].Oneday[2].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="32"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[2].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[2].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[2].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="7"
-                        Background="{x:Bind ViewModel.Oneweek[3].Oneday[5].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[5].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[5].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[5].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Background="{x:Bind ViewModel.Oneweek[3].Oneday[3].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="33"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[3].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[3].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[3].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="6"
+                    Background="{x:Bind ViewModel.Oneweek[3].Oneday[4].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="34"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[4].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[4].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[4].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="{x:Bind ViewModel.Oneweek[3].Oneday[5].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="35"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[5].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[5].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[5].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
 
         </Grid>
 
@@ -693,83 +1267,203 @@
                        Text="周五"
                        FontSize="20"/>
 
-            <StackPanel Grid.Row="2"
-                        Background="{x:Bind ViewModel.Oneweek[4].Oneday[0].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[0].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[0].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[0].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="2"
+                    Background="{x:Bind ViewModel.Oneweek[4].Oneday[0].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="40"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[0].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[0].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[0].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="3"
-                        Background="{x:Bind ViewModel.Oneweek[4].Oneday[1].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[1].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[1].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[1].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="4"
-                        Background="{x:Bind ViewModel.Oneweek[4].Oneday[2].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[2].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[2].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[2].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="3"
+                    Background="{x:Bind ViewModel.Oneweek[4].Oneday[1].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="41"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[1].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[1].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[1].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="5"
-                        Background="{x:Bind ViewModel.Oneweek[4].Oneday[3].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[3].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[3].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[3].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="6"
-                        Background="{x:Bind ViewModel.Oneweek[4].Oneday[4].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[4].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[4].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[4].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="4"
+                    Background="{x:Bind ViewModel.Oneweek[4].Oneday[2].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="42"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[2].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[2].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[2].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="7"
-                        Background="{x:Bind ViewModel.Oneweek[4].Oneday[5].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[5].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[5].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[5].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Background="{x:Bind ViewModel.Oneweek[4].Oneday[3].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="43"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[3].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[3].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[3].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="6"
+                    Background="{x:Bind ViewModel.Oneweek[4].Oneday[4].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="44"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[4].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[4].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[4].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="{x:Bind ViewModel.Oneweek[4].Oneday[5].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="45"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[5].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[5].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[5].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
 
         </Grid>
 
@@ -795,83 +1489,203 @@
                        Text="周六"
                        FontSize="20"/>
 
-            <StackPanel Grid.Row="2"
-                        Background="{x:Bind ViewModel.Oneweek[5].Oneday[0].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[0].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[0].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[0].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="2"
+                    Background="{x:Bind ViewModel.Oneweek[5].Oneday[0].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="50"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[0].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[0].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[0].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="3"
-                        Background="{x:Bind ViewModel.Oneweek[5].Oneday[1].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[1].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[1].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[1].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="4"
-                        Background="{x:Bind ViewModel.Oneweek[5].Oneday[2].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[2].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[2].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[2].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="3"
+                    Background="{x:Bind ViewModel.Oneweek[5].Oneday[1].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="51"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[1].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[1].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[1].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="5"
-                        Background="{x:Bind ViewModel.Oneweek[5].Oneday[3].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[3].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[3].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[3].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
 
-            <StackPanel Grid.Row="6"
-                        Background="{x:Bind ViewModel.Oneweek[5].Oneday[4].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[4].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[4].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[4].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            <Button Grid.Row="4"
+                    Background="{x:Bind ViewModel.Oneweek[5].Oneday[2].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="52"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[2].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[2].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[2].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
 
-            <StackPanel Grid.Row="7"
-                        Background="{x:Bind ViewModel.Oneweek[5].Oneday[5].Color}">
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[5].Name}"
-                           TextWrapping="Wrap"
-                           Margin="0,10,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[5].LocTimes[0].Location}"
-                           TextWrapping="Wrap"
-                           Margin="0,2,0,0"/>
-                <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[5].Notes}"
-                           TextWrapping="Wrap"
-                           Margin="0,5,0,0"/>
-            </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Background="{x:Bind ViewModel.Oneweek[5].Oneday[3].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="53"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[3].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[3].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[3].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="6"
+                    Background="{x:Bind ViewModel.Oneweek[5].Oneday[4].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="54"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[4].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[4].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[4].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="{x:Bind ViewModel.Oneweek[5].Oneday[5].Color}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+            >
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Style="{ThemeResource BaseTextBlockStyle}" 
+                                       Text="请填写小便签" />
+                            <TextBox Text="{x:Bind BoxText,Mode=TwoWay}"          
+                                     VerticalAlignment="Center"
+                                     PlaceholderText="Get Note"/>
+                            <Button Content="添加"
+                                    Click="EnterNote_Click"
+                                    Tag="55"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel Orientation="Vertical" Width="Auto">
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[5].Name}"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[5].LocTimes[0].Location}"
+                               TextWrapping="Wrap"
+                               Margin="0,2,0,0"/>
+                    <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[5].Notes}"
+                               TextWrapping="Wrap"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Button>
 
         </Grid>
 

@@ -26,6 +26,7 @@ namespace Syllabus
     /// </summary>
     public sealed partial class WeekSyllabus : Page
     {
+        
         private OneWeek ViewModel { get; set; }
         private Courses DataModel;
 
@@ -61,9 +62,6 @@ namespace Syllabus
             }
             ChooseWeek.ItemsSource = WeekList;
 
-            
-
-
         }
 
 
@@ -74,16 +72,22 @@ namespace Syllabus
 
         private void EnterNote_Click(object sender, RoutedEventArgs e)
         {
+            //得到要改变的是哪节课
             var Bianhao = (sender as Button).Tag.ToString();
-            int Day = ((int)Bianhao[2]) - 48;
-            int Class = (int)Bianhao[3] - 48;
-
-
-            
+            int Day = ((int)Bianhao[0]) - 48;
+            int Class = (int)Bianhao[1] - 48;
+ 
             if (BoxText != "")
             {
                 this.ViewModel.Oneweek[Day].Oneday[Class].Notes = BoxText;
                 Bindings.Update();  //在Note的Layout上写完数据后要通过这句话刷新一下才可以；
+
+                //把东西写入数据库；
+                //下边这两句不正确。
+                DataModel.Add(ViewModel.Oneweek[Day].Oneday[Class].Name, BoxText);
+                SimpleIoc.Default.GetInstance<DatabaseService>().AddCourse(new Course(ViewModel.Oneweek[Day].Oneday[Class].Name, BoxText));
+               
+
             }
 
         }
