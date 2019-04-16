@@ -57,79 +57,76 @@
                 <TextBlock  
                            Name="Text"/>
             </StackPanel>
-            
 
             <TextBlock Grid.Row="2"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"
+                   Margin="0,20,0,0"
                    Text="一"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="2"
                    HorizontalAlignment="Center" 
-                   Margin="0,80,0,0"
+                   Margin="0,60,0,0"
                    Text="二"
                    FontSize="20"/>
 
-
             <TextBlock Grid.Row="3"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"
+                   Margin="0,20,0,0"
                    Text="三"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="3"
                    HorizontalAlignment="Center" 
-                   Margin="0,80,0,0"
+                   Margin="0,60,0,0"
                    Text="四"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="4"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"
+                   Margin="0,20,0,0"
                    Text="五"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="4"
                    HorizontalAlignment="Center" 
-                   Margin="0,80,0,0"
+                   Margin="0,60,0,0"
                    Text="六"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="5"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"
+                   Margin="0,20,0,0"
                    Text="七"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="5"
                    HorizontalAlignment="Center" 
-                   Margin="0,80,0,0"
+                   Margin="0,60,0,0"
                    Text="八"
                    FontSize="20"/>
 
-
             <TextBlock Grid.Row="6"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"
+                   Margin="0,20,0,0"
                    Text="九"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="6"
                    HorizontalAlignment="Center" 
-                   Margin="0,80,0,0"
+                   Margin="0,60,0,0"
                    Text="十"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="7"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"
+                   Margin="0,20,0,0"
                    Text="十一"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="7"
                    HorizontalAlignment="Center" 
-                   Margin="0,80,0,0"
+                   Margin="0,60,0,0"
                    Text="十二"
                    FontSize="20"/>
 
@@ -178,13 +175,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[0].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[0].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[0].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -211,13 +208,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[1].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[1].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[1].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -244,13 +241,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[2].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[2].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[2].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -277,13 +274,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[3].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[3].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[3].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -310,13 +307,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[4].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -343,13 +340,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[5].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[5].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[6].Oneday[5].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -400,13 +397,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[0].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[0].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[0].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -433,13 +430,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[1].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[1].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[1].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -466,13 +463,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[2].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[2].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[2].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -499,13 +496,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[3].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[3].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[3].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -532,13 +529,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[4].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[4].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[4].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -565,13 +562,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[5].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[5].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[0].Oneday[5].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -622,13 +619,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[0].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[0].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[0].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -655,13 +652,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[1].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[1].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[1].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -688,13 +685,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[2].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[2].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[2].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -721,13 +718,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[3].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[3].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[3].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -754,13 +751,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[4].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[4].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[4].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -787,13 +784,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[5].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[5].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[1].Oneday[5].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -844,13 +841,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[0].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[0].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[0].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -877,13 +874,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[1].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[1].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[1].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -910,13 +907,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[2].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[2].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[2].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -943,13 +940,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[3].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[3].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[3].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -976,13 +973,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[4].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[4].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[4].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1009,13 +1006,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[5].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[5].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[2].Oneday[5].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1066,13 +1063,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[0].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[0].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[0].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1099,13 +1096,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[1].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[1].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[1].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1132,13 +1129,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[2].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[2].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[2].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1165,13 +1162,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[3].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[3].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[3].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1198,13 +1195,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[4].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[4].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[4].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1231,13 +1228,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[5].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[5].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[3].Oneday[5].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1288,13 +1285,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[0].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[0].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[0].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1321,13 +1318,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[1].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[1].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[1].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1354,13 +1351,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[2].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[2].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[2].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1387,13 +1384,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[3].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[3].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[3].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1420,13 +1417,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[4].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[4].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[4].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1453,13 +1450,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[5].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[5].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[4].Oneday[5].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1510,13 +1507,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[0].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[0].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[0].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1543,13 +1540,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[1].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[1].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[1].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1576,13 +1573,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[2].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[2].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[2].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1609,13 +1606,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[3].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[3].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[3].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1642,13 +1639,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[4].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[4].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[4].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 
@@ -1675,13 +1672,13 @@
                 </Button.Flyout>
                 <StackPanel Orientation="Vertical" Width="Auto">
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[5].Name}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,10,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[5].LocTimes[0].Location}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,2,0,0"/>
                     <TextBlock Text="{x:Bind ViewModel.Oneweek[5].Oneday[5].Notes}"
-                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
                                Margin="0,5,0,0"/>
                 </StackPanel>
 

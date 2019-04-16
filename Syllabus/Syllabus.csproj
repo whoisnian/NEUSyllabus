@@ -134,6 +134,8 @@
     <Compile Include="SettingPage.xaml.cs">
       <DependentUpon>SettingPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\AllPageOneCourse.cs" />
+    <Compile Include="ViewModels\AllPageOneDay.cs" />
     <Compile Include="ViewModels\Course.cs" />
     <Compile Include="ViewModels\Courses.cs" />
     <Compile Include="ViewModels\LocTime.cs" />

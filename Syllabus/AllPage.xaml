@@ -46,75 +46,75 @@
 
             <TextBlock Grid.Row="2"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"
+                   Margin="0,20,0,0"
                    Text="一"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="2"
                    HorizontalAlignment="Center" 
-                   Margin="0,80,0,0"
+                   Margin="0,60,0,0"
                    Text="二"
                    FontSize="20"/>
 
 
             <TextBlock Grid.Row="3"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"
+                   Margin="0,20,0,0"
                    Text="三"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="3"
                    HorizontalAlignment="Center" 
-                   Margin="0,80,0,0"
+                   Margin="0,60,0,0"
                    Text="四"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="4"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"
+                   Margin="0,20,0,0"
                    Text="五"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="4"
                    HorizontalAlignment="Center" 
-                   Margin="0,80,0,0"
+                   Margin="0,60,0,0"
                    Text="六"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="5"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"
+                   Margin="0,20,0,0"
                    Text="七"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="5"
                    HorizontalAlignment="Center" 
-                   Margin="0,80,0,0"
+                   Margin="0,60,0,0"
                    Text="八"
                    FontSize="20"/>
 
 
             <TextBlock Grid.Row="6"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"
+                   Margin="0,20,0,0"
                    Text="九"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="6"
                    HorizontalAlignment="Center" 
-                   Margin="0,80,0,0"
+                   Margin="0,60,0,0"
                    Text="十"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="7"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"
+                   Margin="0,20,0,0"
                    Text="十一"
                    FontSize="20"/>
 
             <TextBlock Grid.Row="7"
                    HorizontalAlignment="Center" 
-                   Margin="0,80,0,0"
+                   Margin="0,60,0,0"
                    Text="十二"
                    FontSize="20"/>
 
@@ -142,14 +142,185 @@
                        Text="周日"
                        FontSize="20"/>
 
+            <Button Grid.Row="2"
+                    Background="SpringGreen"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[0].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[0].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[0].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[0].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
 
+            <Button Grid.Row="3"
+                    Background="Aqua"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[1].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[1].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[1].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[1].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
 
+            <Button Grid.Row="4"
+                    Background="SpringGreen"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[2].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[2].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[2].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[2].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
 
+            <Button Grid.Row="5"
+                    Background="Aqua"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[3].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[3].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[3].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[3].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
 
+            <Button Grid.Row="6"
+                    Background="SpringGreen"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[4].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[4].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[4].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[4].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
 
-
-
-
+            <Button Grid.Row="7"
+                    Background="Aqua"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[5].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[5].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[5].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[6].AllPageOneday[5].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
 
         </Grid>
 
@@ -175,6 +346,186 @@
                        Text="周一"
                        FontSize="20"/>
 
+            <Button Grid.Row="2"
+                    Background="HotPink"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[0].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[0].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[0].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[0].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="3"
+                    Background="LightGoldenrodYellow"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[1].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[1].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[1].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[1].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="4"
+                    Background="HotPink"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[2].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[2].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[2].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[2].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Background="LightGoldenrodYellow"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[3].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[3].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[3].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[3].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="6"
+                    Background="HotPink"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[4].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[4].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[4].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[4].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="LightGoldenrodYellow"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[5].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[5].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[5].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[0].AllPageOneday[5].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
         </Grid>
 
         <!--第四列 周二-->
@@ -198,6 +549,186 @@
                        HorizontalAlignment="Center"
                        Text="周二"
                        FontSize="20"/>
+
+            <Button Grid.Row="2"
+                    Background="SpringGreen"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[0].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[0].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[0].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[0].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="3"
+                    Background="Aqua"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[1].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[1].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[1].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[1].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="4"
+                    Background="SpringGreen"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[2].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[2].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[2].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[2].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Background="Aqua"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[3].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[3].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[3].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[3].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="6"
+                    Background="SpringGreen"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[4].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[4].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[4].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[4].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="Aqua"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[5].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[5].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[5].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[1].AllPageOneday[5].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
 
         </Grid>
 
@@ -223,6 +754,186 @@
                        Text="周三"
                        FontSize="20"/>
 
+            <Button Grid.Row="2"
+                    Background="HotPink"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[0].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[0].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[0].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[0].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="3"
+                    Background="LightGoldenrodYellow"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[1].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[1].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[1].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[1].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="4"
+                    Background="HotPink"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[2].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[2].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[2].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[2].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Background="LightGoldenrodYellow"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[3].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[3].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[3].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[3].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="6"
+                    Background="HotPink"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[4].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[4].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[4].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[4].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="LightGoldenrodYellow"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[5].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[5].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[5].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[2].AllPageOneday[5].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
         </Grid>
 
         <!--第六列 周四-->
@@ -246,6 +957,186 @@
                        HorizontalAlignment="Center"
                        Text="周四"
                        FontSize="20"/>
+
+            <Button Grid.Row="2"
+                    Background="SpringGreen"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[0].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[0].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[0].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[0].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="3"
+                    Background="Aqua"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[1].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[1].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[1].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[1].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="4"
+                    Background="SpringGreen"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[2].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[2].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[2].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[2].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Background="Aqua"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[3].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[3].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[3].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[3].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="6"
+                    Background="SpringGreen"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[4].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[4].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[4].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[4].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="Aqua"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[5].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[5].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[5].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[3].AllPageOneday[5].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
 
         </Grid>
 
@@ -271,6 +1162,186 @@
                        Text="周五"
                        FontSize="20"/>
 
+            <Button Grid.Row="2"
+                    Background="HotPink"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[0].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[0].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[0].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[0].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="3"
+                    Background="LightGoldenrodYellow"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[1].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[1].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[1].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[1].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="4"
+                    Background="HotPink"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[2].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[2].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[2].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[2].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Background="LightGoldenrodYellow"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[3].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[3].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[3].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[3].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="6"
+                    Background="HotPink"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[4].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[4].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[4].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[4].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="LightGoldenrodYellow"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[5].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[5].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[5].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[4].AllPageOneday[5].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
         </Grid>
 
         <!--第八列 周六-->
@@ -295,10 +1366,187 @@
                        Text="周六"
                        FontSize="20"/>
 
+            <Button Grid.Row="2"
+                    Background="SpringGreen"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[0].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[0].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[0].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[0].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="3"
+                    Background="Aqua"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[1].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[1].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[1].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[1].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="4"
+                    Background="SpringGreen"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[2].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[2].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[2].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[2].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="5"
+                    Background="Aqua"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[3].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[3].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[3].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[3].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="6"
+                    Background="SpringGreen"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[4].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[4].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[4].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[4].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="7"
+                    Background="Aqua"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel  Orientation="Vertical">
+                            <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[5].Blocks[0]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[5].Blocks[1]}"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="WordEllipsis"
+                                       FontSize="15"
+                                       Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[5].Blocks[0]}" 
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"/>
+                    <TextBlock Text="{x:Bind AllPageOneWeek[5].AllPageOneday[5].Blocks[1]}"
+                               TextTrimming="WordEllipsis"
+                               FontSize="15"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+            </Button>
+
         </Grid>
 
-
-
     </Grid>
-
 </Page>
