@@ -8,7 +8,297 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock FontSize="64">AllPage</TextBlock>
+    <Grid BorderBrush="Black" BorderThickness="1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--第一列-->
+        <Grid Grid.Column="1"
+              BorderBrush="Black"
+              BorderThickness="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Text="全部课程"
+                       FontSize="20"/>
+
+            <TextBlock Grid.Row="2"
+                   HorizontalAlignment="Center"
+                   Margin="0,30,0,0"
+                   Text="一"
+                   FontSize="20"/>
+
+            <TextBlock Grid.Row="2"
+                   HorizontalAlignment="Center" 
+                   Margin="0,80,0,0"
+                   Text="二"
+                   FontSize="20"/>
+
+
+            <TextBlock Grid.Row="3"
+                   HorizontalAlignment="Center"
+                   Margin="0,30,0,0"
+                   Text="三"
+                   FontSize="20"/>
+
+            <TextBlock Grid.Row="3"
+                   HorizontalAlignment="Center" 
+                   Margin="0,80,0,0"
+                   Text="四"
+                   FontSize="20"/>
+
+            <TextBlock Grid.Row="4"
+                   HorizontalAlignment="Center"
+                   Margin="0,30,0,0"
+                   Text="五"
+                   FontSize="20"/>
+
+            <TextBlock Grid.Row="4"
+                   HorizontalAlignment="Center" 
+                   Margin="0,80,0,0"
+                   Text="六"
+                   FontSize="20"/>
+
+            <TextBlock Grid.Row="5"
+                   HorizontalAlignment="Center"
+                   Margin="0,30,0,0"
+                   Text="七"
+                   FontSize="20"/>
+
+            <TextBlock Grid.Row="5"
+                   HorizontalAlignment="Center" 
+                   Margin="0,80,0,0"
+                   Text="八"
+                   FontSize="20"/>
+
+
+            <TextBlock Grid.Row="6"
+                   HorizontalAlignment="Center"
+                   Margin="0,30,0,0"
+                   Text="九"
+                   FontSize="20"/>
+
+            <TextBlock Grid.Row="6"
+                   HorizontalAlignment="Center" 
+                   Margin="0,80,0,0"
+                   Text="十"
+                   FontSize="20"/>
+
+            <TextBlock Grid.Row="7"
+                   HorizontalAlignment="Center"
+                   Margin="0,30,0,0"
+                   Text="十一"
+                   FontSize="20"/>
+
+            <TextBlock Grid.Row="7"
+                   HorizontalAlignment="Center" 
+                   Margin="0,80,0,0"
+                   Text="十二"
+                   FontSize="20"/>
+
+        </Grid>
+
+        <!--第二列 周日-->
+        <Grid Grid.Column="2" 
+              BorderBrush="AliceBlue"
+              BorderThickness="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Text="周日"
+                       FontSize="20"/>
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+
+        <!--第三列 周一-->
+        <Grid Grid.Column="3" 
+              BorderBrush="Black"
+              BorderThickness="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Text="周一"
+                       FontSize="20"/>
+
+        </Grid>
+
+        <!--第四列 周二-->
+        <Grid Grid.Column="4" 
+              BorderBrush="AliceBlue"
+              BorderThickness="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Text="周二"
+                       FontSize="20"/>
+
+        </Grid>
+
+        <!--第五列 周三-->
+        <Grid Grid.Column="5" 
+              BorderBrush="Black"
+              BorderThickness="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Text="周三"
+                       FontSize="20"/>
+
+        </Grid>
+
+        <!--第六列 周四-->
+        <Grid Grid.Column="6" 
+              BorderBrush="AliceBlue"
+              BorderThickness="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Text="周四"
+                       FontSize="20"/>
+
+        </Grid>
+
+        <!--第七列 周五-->
+        <Grid Grid.Column="7" 
+              BorderBrush="Black"
+              BorderThickness="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Text="周五"
+                       FontSize="20"/>
+
+        </Grid>
+
+        <!--第八列 周六-->
+        <Grid Grid.Column="8" 
+              BorderBrush="AliceBlue"
+              BorderThickness="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Text="周六"
+                       FontSize="20"/>
+
+        </Grid>
+
+
+
     </Grid>
+
 </Page>
