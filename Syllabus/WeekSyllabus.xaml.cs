@@ -70,6 +70,8 @@ namespace Syllabus
 
         }
 
+
+        //添加便签
         private void EnterNote_Click(object sender, RoutedEventArgs e)
         {
             //得到要改变的是哪节课
@@ -77,10 +79,11 @@ namespace Syllabus
             int Day = ((int)Bianhao[0]) - 48;
             int Class = (int)Bianhao[1] - 48;
  
-            if (BoxText != "")
-            {
-                this.ViewModel.Oneweek[Day].Oneday[Class].Notes = BoxText;
-                Bindings.Update();  //在Note的Layout上写完数据后要通过这句话刷新一下才可以；
+           //不对BoxText设置判断是否为空；
+           //这样为空的时候直接就是删除了；
+           //就不需要再写一个删除的Button了
+            this.ViewModel.Oneweek[Day].Oneday[Class].Notes = BoxText;
+            Bindings.Update();  //在Note的Layout上写完数据后要通过这句话刷新一下才可以；
 
                 //把东西写入数据库；
                 //下边这两句不正确。
@@ -88,7 +91,6 @@ namespace Syllabus
                // SimpleIoc.Default.GetInstance<DatabaseService>().AddCourse(new Course(ViewModel.Oneweek[Day].Oneday[Class].Name, BoxText));
                
 
-            }
 
         }
 
@@ -125,7 +127,6 @@ namespace Syllabus
             }
         }
 
-       
-
+        
     }
 }
