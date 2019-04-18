@@ -15,5 +15,12 @@ namespace Syllabus.ViewModels
     public class AllPageOneCourse
     {
         public string[] Blocks = new string[2] { " ", " " };
+        public string Color { get; set; }
+
+        
+        public AllPageOneCourse()
+        {
+            Color = "White";
+        }
     }
 }

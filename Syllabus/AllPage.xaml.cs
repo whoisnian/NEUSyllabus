@@ -28,6 +28,15 @@ namespace Syllabus
         //全部课程数据
         private Courses DataModel;
 
+        //两列颜色；
+        //用于周一周三周五
+        private string[] FirstColor = { "HotPink" , "LightGoldenrodYellow", "HotPink", "LightGoldenrodYellow", "HotPink", "LightGoldenrodYellow"};
+        //用于周日周二周四周六
+        private string[] SecondColor = {"SpringGreen", "Aqua", "SpringGreen", "Aqua", "SpringGreen", "Aqua"};
+
+        private int[] FirstNum = {0, 2, 4};
+        private int[] SecondNum = {1, 3, 5, 6};
+
         public AllPageOneDay[] AllPageOneWeek =
         {
             new AllPageOneDay(), new AllPageOneDay(), new AllPageOneDay(), new AllPageOneDay(), new AllPageOneDay(),
@@ -38,7 +47,7 @@ namespace Syllabus
         {
             this.InitializeComponent();
             DataModel = SimpleIoc.Default.GetInstance<DatabaseService>().GetAllCourses();
-            foreach (var onecourse in DataModel.CourseCollection)//显示第一周课程
+            foreach (var onecourse in DataModel.CourseCollection)
             {
                 foreach (var oneloctime in onecourse.LocTimes)
                 {
@@ -65,6 +74,25 @@ namespace Syllabus
                     }
                 }
             }
+
+            foreach (int i in FirstNum)
+            {
+                for (int k = 0; k < 6; k++)
+                {
+                    if (AllPageOneWeek[i].AllPageOneday[k].Blocks[0] != " ")
+                        AllPageOneWeek[i].AllPageOneday[k].Color = FirstColor[k];
+                }
+            }
+
+            foreach (int i in SecondNum)
+            {
+                for (int k = 0; k < 6; k++)
+                {
+                    if (AllPageOneWeek[i].AllPageOneday[k].Blocks[0] != " ")
+                        AllPageOneWeek[i].AllPageOneday[k].Color = SecondColor[k];
+                }
+            }
+
         }
     }
 }

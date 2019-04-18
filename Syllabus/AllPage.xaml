@@ -143,7 +143,7 @@
                        FontSize="20"/>
 
             <Button Grid.Row="2"
-                    Background="SpringGreen"
+                    Background="{x:Bind AllPageOneWeek[6].AllPageOneday[0].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -173,7 +173,7 @@
             </Button>
 
             <Button Grid.Row="3"
-                    Background="Aqua"
+                    Background="{x:Bind AllPageOneWeek[6].AllPageOneday[1].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -203,7 +203,7 @@
             </Button>
 
             <Button Grid.Row="4"
-                    Background="SpringGreen"
+                    Background="{x:Bind AllPageOneWeek[6].AllPageOneday[2].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -233,7 +233,7 @@
             </Button>
 
             <Button Grid.Row="5"
-                    Background="Aqua"
+                    Background="{x:Bind AllPageOneWeek[6].AllPageOneday[3].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -263,7 +263,7 @@
             </Button>
 
             <Button Grid.Row="6"
-                    Background="SpringGreen"
+                    Background="{x:Bind AllPageOneWeek[6].AllPageOneday[4].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -293,7 +293,7 @@
             </Button>
 
             <Button Grid.Row="7"
-                    Background="Aqua"
+                    Background="{x:Bind AllPageOneWeek[6].AllPageOneday[5].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -347,7 +347,7 @@
                        FontSize="20"/>
 
             <Button Grid.Row="2"
-                    Background="HotPink"
+                    Background="{x:Bind AllPageOneWeek[0].AllPageOneday[0].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -377,7 +377,7 @@
             </Button>
 
             <Button Grid.Row="3"
-                    Background="LightGoldenrodYellow"
+                    Background="{x:Bind AllPageOneWeek[0].AllPageOneday[1].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -407,7 +407,7 @@
             </Button>
 
             <Button Grid.Row="4"
-                    Background="HotPink"
+                    Background="{x:Bind AllPageOneWeek[0].AllPageOneday[2].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -437,7 +437,7 @@
             </Button>
 
             <Button Grid.Row="5"
-                    Background="LightGoldenrodYellow"
+                    Background="{x:Bind AllPageOneWeek[0].AllPageOneday[3].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -467,7 +467,7 @@
             </Button>
 
             <Button Grid.Row="6"
-                    Background="HotPink"
+                    Background="{x:Bind AllPageOneWeek[0].AllPageOneday[4].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -497,7 +497,7 @@
             </Button>
 
             <Button Grid.Row="7"
-                    Background="LightGoldenrodYellow"
+                    Background="{x:Bind AllPageOneWeek[0].AllPageOneday[5].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -551,7 +551,7 @@
                        FontSize="20"/>
 
             <Button Grid.Row="2"
-                    Background="SpringGreen"
+                    Background="{x:Bind AllPageOneWeek[1].AllPageOneday[0].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -581,7 +581,7 @@
             </Button>
 
             <Button Grid.Row="3"
-                    Background="Aqua"
+                    Background="{x:Bind AllPageOneWeek[1].AllPageOneday[1].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -611,7 +611,7 @@
             </Button>
 
             <Button Grid.Row="4"
-                    Background="SpringGreen"
+                    Background="{x:Bind AllPageOneWeek[1].AllPageOneday[2].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -641,7 +641,7 @@
             </Button>
 
             <Button Grid.Row="5"
-                    Background="Aqua"
+                    Background="{x:Bind AllPageOneWeek[1].AllPageOneday[3].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -671,7 +671,7 @@
             </Button>
 
             <Button Grid.Row="6"
-                    Background="SpringGreen"
+                    Background="{x:Bind AllPageOneWeek[1].AllPageOneday[4].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -701,7 +701,7 @@
             </Button>
 
             <Button Grid.Row="7"
-                    Background="Aqua"
+                    Background="{x:Bind AllPageOneWeek[1].AllPageOneday[5].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -755,7 +755,7 @@
                        FontSize="20"/>
 
             <Button Grid.Row="2"
-                    Background="HotPink"
+                    Background="{x:Bind AllPageOneWeek[2].AllPageOneday[0].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -785,7 +785,7 @@
             </Button>
 
             <Button Grid.Row="3"
-                    Background="LightGoldenrodYellow"
+                    Background="{x:Bind AllPageOneWeek[2].AllPageOneday[1].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -815,7 +815,7 @@
             </Button>
 
             <Button Grid.Row="4"
-                    Background="HotPink"
+                    Background="{x:Bind AllPageOneWeek[2].AllPageOneday[2].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -845,7 +845,7 @@
             </Button>
 
             <Button Grid.Row="5"
-                    Background="LightGoldenrodYellow"
+                    Background="{x:Bind AllPageOneWeek[2].AllPageOneday[3].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -875,7 +875,7 @@
             </Button>
 
             <Button Grid.Row="6"
-                    Background="HotPink"
+                    Background="{x:Bind AllPageOneWeek[2].AllPageOneday[4].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -905,7 +905,7 @@
             </Button>
 
             <Button Grid.Row="7"
-                    Background="LightGoldenrodYellow"
+                    Background="{x:Bind AllPageOneWeek[2].AllPageOneday[5].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -959,7 +959,7 @@
                        FontSize="20"/>
 
             <Button Grid.Row="2"
-                    Background="SpringGreen"
+                    Background="{x:Bind AllPageOneWeek[3].AllPageOneday[0].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -989,7 +989,7 @@
             </Button>
 
             <Button Grid.Row="3"
-                    Background="Aqua"
+                    Background="{x:Bind AllPageOneWeek[3].AllPageOneday[1].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1019,7 +1019,7 @@
             </Button>
 
             <Button Grid.Row="4"
-                    Background="SpringGreen"
+                    Background="{x:Bind AllPageOneWeek[3].AllPageOneday[2].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1049,7 +1049,7 @@
             </Button>
 
             <Button Grid.Row="5"
-                    Background="Aqua"
+                    Background="{x:Bind AllPageOneWeek[3].AllPageOneday[3].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1079,7 +1079,7 @@
             </Button>
 
             <Button Grid.Row="6"
-                    Background="SpringGreen"
+                    Background="{x:Bind AllPageOneWeek[3].AllPageOneday[4].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1109,7 +1109,7 @@
             </Button>
 
             <Button Grid.Row="7"
-                    Background="Aqua"
+                    Background="{x:Bind AllPageOneWeek[3].AllPageOneday[5].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1163,7 +1163,7 @@
                        FontSize="20"/>
 
             <Button Grid.Row="2"
-                    Background="HotPink"
+                    Background="{x:Bind AllPageOneWeek[4].AllPageOneday[0].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1193,7 +1193,7 @@
             </Button>
 
             <Button Grid.Row="3"
-                    Background="LightGoldenrodYellow"
+                    Background="{x:Bind AllPageOneWeek[4].AllPageOneday[1].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1223,7 +1223,7 @@
             </Button>
 
             <Button Grid.Row="4"
-                    Background="HotPink"
+                    Background="{x:Bind AllPageOneWeek[4].AllPageOneday[2].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1253,7 +1253,7 @@
             </Button>
 
             <Button Grid.Row="5"
-                    Background="LightGoldenrodYellow"
+                    Background="{x:Bind AllPageOneWeek[4].AllPageOneday[3].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1283,7 +1283,7 @@
             </Button>
 
             <Button Grid.Row="6"
-                    Background="HotPink"
+                    Background="{x:Bind AllPageOneWeek[4].AllPageOneday[4].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1313,7 +1313,7 @@
             </Button>
 
             <Button Grid.Row="7"
-                    Background="LightGoldenrodYellow"
+                    Background="{x:Bind AllPageOneWeek[4].AllPageOneday[5].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1367,7 +1367,7 @@
                        FontSize="20"/>
 
             <Button Grid.Row="2"
-                    Background="SpringGreen"
+                    Background="{x:Bind AllPageOneWeek[5].AllPageOneday[0].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1397,7 +1397,7 @@
             </Button>
 
             <Button Grid.Row="3"
-                    Background="Aqua"
+                    Background="{x:Bind AllPageOneWeek[5].AllPageOneday[1].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1427,7 +1427,7 @@
             </Button>
 
             <Button Grid.Row="4"
-                    Background="SpringGreen"
+                    Background="{x:Bind AllPageOneWeek[5].AllPageOneday[2].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1457,7 +1457,7 @@
             </Button>
 
             <Button Grid.Row="5"
-                    Background="Aqua"
+                    Background="{x:Bind AllPageOneWeek[5].AllPageOneday[3].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1487,7 +1487,7 @@
             </Button>
 
             <Button Grid.Row="6"
-                    Background="SpringGreen"
+                    Background="{x:Bind AllPageOneWeek[5].AllPageOneday[4].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
@@ -1517,7 +1517,7 @@
             </Button>
 
             <Button Grid.Row="7"
-                    Background="Aqua"
+                    Background="{x:Bind AllPageOneWeek[5].AllPageOneday[5].Color}"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch">
                 <Button.Flyout>
