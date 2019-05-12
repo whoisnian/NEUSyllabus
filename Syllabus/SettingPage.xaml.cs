@@ -57,7 +57,6 @@ namespace Syllabus
                 }
 
                 ViewModel = SimpleIoc.Default.GetInstance<DatabaseService>().GetAllCourses();
-
                 ContentDialog SuccessDialog = new ContentDialog()
                 {
                     Title = "成功导入课程信息",

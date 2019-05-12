@@ -87,8 +87,8 @@ namespace Syllabus
 
                 //把东西写入数据库；
                 //下边这两句不正确。
-               // DataModel.Add(ViewModel.Oneweek[Day].Oneday[Class].Name, BoxText);
-               // SimpleIoc.Default.GetInstance<DatabaseService>().AddCourse(new Course(ViewModel.Oneweek[Day].Oneday[Class].Name, BoxText));
+                //楼上说不正确是因为调用错方法了！
+            SimpleIoc.Default.GetInstance<DatabaseService>().AddNote(ViewModel.Oneweek[Day].Oneday[Class].Name, BoxText);
                
 
 
