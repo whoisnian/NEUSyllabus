@@ -136,14 +136,23 @@ namespace Syllabus.Services
                     {
                         TempDbCourseRes.DbLocTimes = new List<DbLocTime>();
                     }
-                    TempDbCourseRes.DbLocTimes.Add(new DbLocTime
+                    if (!TempDbCourseRes.DbLocTimes.Exists(t =>
+                        t.Location.Equals(TempLocTime.Location)&&
+                        t.Week.Equals(TempLocTime.Week)&&
+                        t.WeekDay.Equals(TempLocTime.WeekDay)&&
+                        t.BeginTime.Equals(TempLocTime.BeginTime)&&
+                        t.EndTime.Equals(TempLocTime.EndTime)
+                    ))
                     {
-                        Location = TempLocTime.Location,
-                        Week = TempLocTime.Week,
-                        WeekDay = TempLocTime.WeekDay,
-                        BeginTime = TempLocTime.BeginTime,
-                        EndTime = TempLocTime.EndTime
-                    });
+                        TempDbCourseRes.DbLocTimes.Add(new DbLocTime
+                        {
+                            Location = TempLocTime.Location,
+                            Week = TempLocTime.Week,
+                            WeekDay = TempLocTime.WeekDay,
+                            BeginTime = TempLocTime.BeginTime,
+                            EndTime = TempLocTime.EndTime
+                        });
+                    }
                 }
             }
             Database.SaveChanges();
