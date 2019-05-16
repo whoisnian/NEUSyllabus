@@ -8,6 +8,8 @@ namespace Syllabus.Models
 {
     public class DbLocTime
     {
+        public DbLocTime() { }
+
         public int DbLocTimeId { get; set; }
 
         /// <summary>

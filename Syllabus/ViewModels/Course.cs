@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using GalaSoft.MvvmLight.Ioc;
+using Syllabus.Services;
 
 namespace Syllabus.ViewModels
 {
@@ -26,6 +28,7 @@ namespace Syllabus.ViewModels
             Name = "";
             Teacher = "";
             Notes = "";
+            for (int i = 1; i <= 20; ++i) WeekChoices.Add(i);
         }
 
         public Course(String InputName, String InputTeacher, int Tag=0)
@@ -36,7 +39,7 @@ namespace Syllabus.ViewModels
             for (int i = 1; i <= 20; ++i) WeekChoices.Add(i);
             //AddLocTime("一号楼A104", "111111110000000000", 1, 3, 4);
             //AddLocTime("一号楼A105", "111111110011000000", 3, 5, 6);
-            Color = "#FFFFFF";
+            Color = "#0099FF";
             Notes = "";
         }
 
@@ -47,7 +50,7 @@ namespace Syllabus.ViewModels
             Notes = oldcourse.Notes;
             Color = oldcourse.Color;
             LocTimes = oldcourse.LocTimes;
-            WeekChoices = oldcourse.WeekChoices;
+            for (int i = 1; i <= 20; ++i) WeekChoices.Add(i);
             TagGenerator = oldcourse.TagGenerator;
         }
 
@@ -66,6 +69,11 @@ namespace Syllabus.ViewModels
             TagGenerator = InputTag;
         }
 
+        public void SetColor(String InputColor)
+        {
+            Color = InputColor;
+        }
+
         public void DeleteLocTime(int Tag)
         {
             LocTime DeletingLocTime = new LocTime();
@@ -77,6 +85,7 @@ namespace Syllabus.ViewModels
                 }
             }
             LocTimes.Remove(DeletingLocTime);
+            SimpleIoc.Default.GetInstance<DatabaseService>().DelLocTime(Name,DeletingLocTime.Location,DeletingLocTime.Week,DeletingLocTime.WeekDay,DeletingLocTime.BeginTime,DeletingLocTime.EndTime);
         }
 
         public void ClearLocTime()

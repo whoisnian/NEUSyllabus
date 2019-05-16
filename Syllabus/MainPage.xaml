@@ -13,8 +13,8 @@
                         ItemInvoked="NvSample_ItemInvoked"
                         Loaded="NavView_Loaded">
             <NavigationView.MenuItems>
-                <NavigationViewItem Icon="Play" Content="WeekSyllabus" Tag="WeekSyllabus" />
-                <NavigationViewItem Icon="Save" Content="AllPage" Tag="AllPage" />
+                <NavigationViewItem Icon="Calendar" Content="Week" Tag="WeekSyllabus" />
+                <NavigationViewItem Icon="AllApps" Content="All" Tag="AllPage" />
             </NavigationView.MenuItems>
             <Frame x:Name="ContentFrame"/>
         </NavigationView>

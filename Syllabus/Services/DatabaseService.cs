@@ -183,6 +183,7 @@ namespace Syllabus.Services
             var TempDbCourseRes = Database.DbCourses
                 .Include(DbCourse => DbCourse.DbLocTimes)
                 .SingleOrDefault(a => a.Name.Equals(CourseName));
+            DbLocTime DeletingLocTime=new DbLocTime();
             if (TempDbCourseRes != null)
             {
                 if(TempDbCourseRes.DbLocTimes != null)
@@ -195,9 +196,11 @@ namespace Syllabus.Services
                             && TempDbLocTime.BeginTime.Equals(InputBeginTime)
                             &&TempDbLocTime.EndTime.Equals(InputEndTime))
                         {
-                            TempDbCourseRes.DbLocTimes.Remove(TempDbLocTime);
+                            DeletingLocTime = TempDbLocTime;
+                            
                         }
                     }
+                    TempDbCourseRes.DbLocTimes.Remove(DeletingLocTime);
                 }
             }
             Database.SaveChanges();

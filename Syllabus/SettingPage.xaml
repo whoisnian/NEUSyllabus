@@ -22,7 +22,7 @@
                 VerticalAlignment="Top"
                 HorizontalAlignment="Left"
                 Grid.Row="1"
-                Margin="50,25,0,0">
+                Margin="62,20,0,0">
             <Button.Flyout>
                 <Flyout>
                     <StackPanel Orientation="Vertical">
@@ -61,7 +61,7 @@
                 VerticalAlignment="Top"
                 HorizontalAlignment="Left"
                 Grid.Row="2"
-                Margin="50,25,0,0"
+                Margin="62,20,0,0"
                 >
             <Button.Flyout>
                 <Flyout>

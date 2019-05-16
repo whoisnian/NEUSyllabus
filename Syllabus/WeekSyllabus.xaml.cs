@@ -46,6 +46,7 @@ namespace Syllabus
                         for (int k = oneloctime.BeginTime / 2; k < oneloctime.EndTime / 2; k++)
                         {
                             ViewModel.Oneweek[oneloctime.WeekDay - 1].Oneday[k] = onecourse.DeepCopy();
+                            ViewModel.Oneweek[oneloctime.WeekDay - 1].Oneday[k].SetColor("#AADDFF");
                             ViewModel.Oneweek[oneloctime.WeekDay - 1].Oneday[k].ClearLocTime();
                             ViewModel.Oneweek[oneloctime.WeekDay - 1].Oneday[k].AddLocTime(oneloctime);
                         }
@@ -56,7 +57,7 @@ namespace Syllabus
             ViewModel.AddEmptyLocTime();
             //Week选择
             List<ViewModelWeekList> WeekList = new List<ViewModelWeekList>();
-            for (int count = 1; count < 54; count++)
+            for (int count = 1; count <= 28; count++)
             {
                 WeekList.Add(new ViewModelWeekList { Week = count.ToString() });
             }

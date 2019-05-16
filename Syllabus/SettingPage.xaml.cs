@@ -157,12 +157,14 @@ namespace Syllabus
         private void DelCourse_OnClick(object sender, RoutedEventArgs e)
         {
             ViewModel.Delete((sender as Button).Tag.ToString());
+            SimpleIoc.Default.GetInstance<DatabaseService>().DelCourse((sender as Button).Tag.ToString());
         }
 
         private void DelLoctime_OnClick(object sender, RoutedEventArgs e)
         {
             int LocTimeTag = (int)(sender as Button).Tag;
             ViewModel.DeleteLocTime(LocTimeTag);
+            
         }
 
 

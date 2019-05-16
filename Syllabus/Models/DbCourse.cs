@@ -8,6 +8,7 @@ namespace Syllabus.Models
 {
     public class DbCourse
     {
+
         public int DbCourseId { get; set; }
 
         /// <summary>
