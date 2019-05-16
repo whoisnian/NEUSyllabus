@@ -46,11 +46,17 @@
                             <PasswordBox Name="PswBox"
                                          RelativePanel.RightOf="BeforePsw"/>
                         </RelativePanel>
-                        <Button Content="登录并同步"
+                        <RelativePanel>
+                            <Button Content="登录并同步"
                                     Name="EnterAccount"
                                     HorizontalAlignment="Left"
                                     Click="EnterAccount_OnClick" />
-
+                            <ProgressRing Name="GetRemoteCoursesRing"
+                                          IsActive="False"
+                                          Margin="10,5,0,0"
+                                          VerticalAlignment="Center"
+                                          RelativePanel.RightOf="EnterAccount"/>
+                        </RelativePanel>
                     </StackPanel>
                 </Flyout>
             </Button.Flyout>

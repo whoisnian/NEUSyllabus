@@ -38,7 +38,14 @@ namespace Syllabus
 
         private async void EnterAccount_OnClick(object sender, RoutedEventArgs e)
         {
+            var OriContent = (sender as Button).Content;
+            (sender as Button).Content = "同步中。。";
+            (sender as Button).IsEnabled = false;
+            GetRemoteCoursesRing.IsActive = true;
             List<Course> AllCourses = await SimpleIoc.Default.GetInstance<GetCoursesService>().LoginAndGetCoursesAsync(NameBox.Text, PswBox.Password);
+            (sender as Button).Content = OriContent;
+            (sender as Button).IsEnabled = true;
+            GetRemoteCoursesRing.IsActive = false;
             if (AllCourses == null)
             {
                 ContentDialog WrongDialog = new ContentDialog()
